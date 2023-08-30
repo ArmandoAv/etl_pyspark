@@ -1,0 +1,4 @@
+# Ignore enviroment variables file and __pycache__ directory
+
+.env
+src/files/__pycache__

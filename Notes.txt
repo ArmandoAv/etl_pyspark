@@ -1,0 +1,15 @@
+Manejo de variables de entorno
+
+pip install python-dotenv
+pip install python-decouple
+
+crear un archivo .env
+
+Agregar las variables de conexion de la BD
+
+# Connector parameters
+conn = "com.microsoft.sqlserver.jdbc.spark"
+sql_user = ""
+sql_pwd = ""
+sql_db = ''
+sql_server = ""
