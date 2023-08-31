@@ -23,6 +23,7 @@ input_path = "../input/"
 output_path = "../output/"
 temp_path = "../temp/"
 tempo_path = "../temp/_temporary/"
+proces_path = "../processed/"
 
 
 # Date parameter
@@ -40,12 +41,14 @@ file_locacion_descenso_name = "cat_locacion_descenso_" + format_date + ".csv"
 file_locacion_recogida_name = "cat_locacion_recogida_" + format_date + ".csv"
 file_fecha_name = "dim_fecha_" + format_date + ".csv"
 file_pago_viaje_name = "fact_pago_viaje_" + format_date + ".csv"
+file_final_json_name = "uber_data_" + format_date + ".json"
 file_final_tarifa_name = "cat_final_tarifa_" + format_date + ".csv"
 file_final_tipo_pago_name = "cat_final_tipo_pago_" + format_date + ".csv"
 file_final_proveedor_name = "cat_proveedor_" + format_date + ".csv"
 file_final_loc_descenso_name = "cat_final_loc_descenso_" + format_date + ".csv"
 file_final_loc_recogida_name = "cat_final_loc_recogida_" + format_date + ".csv"
 file_final_fch_name = "dim_final_fecha_" + format_date + ".csv"
+file_image_pago_viaje_name =  "fact_image_pago_viaje_" + format_date + ".csv"
 file_final_pago_viaje_name =  "fact_final_pago_viaje_" + format_date + ".csv"
 
 
@@ -65,6 +68,7 @@ path_final_proveedor = output_path + file_final_proveedor_name
 path_final_loc_descenso = output_path + file_final_loc_descenso_name
 path_final_loc_recogida = output_path + file_final_loc_recogida_name
 path_final_fch = output_path + file_final_fch_name
+path_image_pago_viaje = output_path + file_image_pago_viaje_name
 path_final_pago_viaje = output_path + file_final_pago_viaje_name
 
 
@@ -216,6 +220,26 @@ schema_pago_viaje = StructType([
     StructField("LONGITUD_RECOGIDA",DoubleType(),True),
     StructField("LATITUD_DESCENSO",DoubleType(),True),
     StructField("LONGITUD_DESCENSO",DoubleType(),True),
+    StructField("ID_TIPO_PAGO",IntegerType(),True),
+    StructField("NUM_PASAJEROS",IntegerType(),True),
+    StructField("DISTANCIA_VIAJE",DoubleType(),True),
+    StructField("FLG_TIENDA_AVANCE",StringType(),True),
+    StructField("MONTO_TARIFA",DoubleType(),True),
+    StructField("EXTRA",DoubleType(),True),
+    StructField("IMP_MTA",DoubleType(),True),
+    StructField("MONTO_PROPINA",DoubleType(),True),
+    StructField("MONTO_PEAJE",DoubleType(),True),
+    StructField("RECARGO_MEJORA",DoubleType(),True),
+    StructField("MONTO_TOTAL",DoubleType(),True)
+])
+
+# Schema image FACT_PAGO_VIAJE
+schema_image_pago_viaje = StructType([
+    StructField("ID_PROVEEDOR",IntegerType(),True),
+    StructField("ID_FCH",IntegerType(),True),
+    StructField("ID_TARIFA",IntegerType(),True),
+    StructField("ID_LOCACION_RECOGIDA",IntegerType(),True),
+    StructField("ID_LOCACION_DESCENSO",IntegerType(),True),
     StructField("ID_TIPO_PAGO",IntegerType(),True),
     StructField("NUM_PASAJEROS",IntegerType(),True),
     StructField("DISTANCIA_VIAJE",DoubleType(),True),

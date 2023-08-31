@@ -5,6 +5,7 @@
 # The libraries are imported
 from files.ETL_Param import *
 from files.File_Load import *
+from files.File_Clean import *
 from files.Table_Read_Load import *
 from pyspark.sql import SparkSession
 
@@ -175,14 +176,45 @@ else:
     the information about this table 
     comes from the json file
 """
-# Load image table FACT_PAGO_VIAJE
+# Load temporal table FACT_PAGO_VIAJE
 print(f"The table {tbf_pago_viaje} is being loading...")
-loadTable(schema_pago_viaje, path_pago_viaje, tb_im_pago_viaje, overwrite)
+loadTable(schema_pago_viaje, path_pago_viaje, tb_tmp_pago_viaje, overwrite)
 
 # Delete past files in the temp path
 deleteFile()
 
+# Create new image csv file for FACT_PAGO_VIAJE
+readTables(table_im_pago_viaje, path_image_pago_viaje, file_image_pago_viaje_name)
+
+# Delete past files in the temp path
+deleteFile()
+
+# Load image table FACT_PAGO_VIAJE
+loadTable(schema_image_pago_viaje, path_image_pago_viaje, tb_im_pago_viaje, overwrite)
+
+# Delete past files in the temp path
+deleteFile()
+
+# Create new csv file for FACT_PAGO_VIAJE
+readTables(table_pago_viaje, path_final_pago_viaje, file_final_pago_viaje_name)
+
+# Validating that the file has records
+with open(path_final_pago_viaje) as myfile:
+    total_lines = sum(1 for line in myfile)
+
+# Load final table DIM_FCH
+if total_lines > 0:
+    loadTable(schema_final_pago_viaje, path_final_pago_viaje, tb_pago_viaje, append)
+else:
+    print(f"\tThere aren't new records to insert into the {tbf_pago_viaje} table\n")
 
 
+"""
+    Paths are prepared for a new ETL process
+"""
+# Clean paths for the new ETL process
+print("\nFinally the paths are prepared for a new ETL process")
+cleanPaths()
 
+# Spark session stops
 sp.stop()
