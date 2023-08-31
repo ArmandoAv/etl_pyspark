@@ -13,16 +13,16 @@ import os
 def cleanPaths():
 
     # Copy json file to processed path
-    shutil.copy(temp_path + file_json_name, proces_path + file_final_json_name)
+    shutil.copy(input_path + file_json_name, proces_path + file_final_json_name)
 
     # Move csv file to processed path
-    os.remove(output_path + file_csv_name, proces_path + file_csv_name)
+    os.rename(output_path + file_csv_name, proces_path + file_csv_name)
 
     # Clean temp path
     delete_temp_path = os.listdir(temp_path)
     
     if len(delete_temp_path) > 0:
-        print("Delete files in temp path\n")
+        print("\nDelete files in the temp path")
         for delete in delete_temp_path:
             os.remove(temp_path + delete)
 
@@ -30,6 +30,6 @@ def cleanPaths():
     delete_output_path = os.listdir(output_path)
     
     if len(delete_output_path) > 0:
-        print("Delete files in temp path\n")
+        print("Delete files in the output path")
         for delete in delete_output_path:
             os.remove(output_path + delete)

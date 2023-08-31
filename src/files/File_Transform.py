@@ -2,10 +2,11 @@
     Create files to load in database tables
 """
 
-# The library is imported
+# The libraries are imported
 from files.ETL_Param import *
 import shutil
 import os
+
 
 # Create file in the output path
 def createFile(file):

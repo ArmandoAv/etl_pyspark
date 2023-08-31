@@ -9,8 +9,18 @@ from files.File_Transform import *
 from pyspark.sql import SparkSession
 from pyspark.sql.types import Row
 from pyspark.sql.functions import col
+import logging
 import time
 
+
+# Create log file 
+logging.basicConfig(filename = path_transform_log_name, \
+                               format='%(asctime)s:%(levelname)s:%(message)s', \
+                               datefmt='%m/%d/%Y %I:%M:%S %p', \
+                               level = logging.DEBUG)
+logging.debug('This message should appear on the console')
+logging.info('So should this')
+logging.warning('And this, too')
 
 # Spark session parameters are initialized
 sp = SparkSession.builder.master("local").appName("Create File").getOrCreate()
@@ -30,7 +40,7 @@ deleteFile()
 
 # Write a DataFrame to file csv
 df_tarifa.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(2)
+time.sleep(10)
 
 # Move the file from temp path to output path
 createFile(file_tarifa_name)
@@ -49,7 +59,7 @@ deleteFile()
 
 # Write a DataFrame to file csv
 df_tipo_pago.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(2)
+time.sleep(10)
 
 # Move file from temp path to output path
 createFile(file_tipo_pago_name)
@@ -67,7 +77,7 @@ deleteFile()
 
 # Write a DataFrame to file csv
 df_proveedor.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(2)
+time.sleep(10)
 
 # Move file from temp path to output path
 createFile(file_proveedor_name)
@@ -93,7 +103,7 @@ deleteFile()
 
 # Write a DataFrame to file csv
 df_locacion_descenso.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(2)
+time.sleep(10)
 
 # Move file from temp path to output path
 createFile(file_locacion_descenso_name)
@@ -111,7 +121,7 @@ deleteFile()
 
 # Write a DataFrame to file csv
 df_locacion_recogida.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(2)
+time.sleep(10)
 
 # Move file from temp path to output path
 createFile(file_locacion_recogida_name)
@@ -129,7 +139,7 @@ deleteFile()
 
 # Write a DataFrame to file csv
 df_fecha.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(2)
+time.sleep(10)
 
 # Move file from temp path to output path
 createFile(file_fecha_name)
@@ -152,7 +162,7 @@ deleteFile()
 
 # Write a DataFrame to file csv
 df_pago_viajes.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(2)
+time.sleep(10)
 
 # Move file from temp path to output path
 createFile(file_pago_viaje_name)

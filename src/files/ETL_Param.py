@@ -24,6 +24,7 @@ output_path = "../output/"
 temp_path = "../temp/"
 tempo_path = "../temp/_temporary/"
 proces_path = "../processed/"
+logs_path = "../logs/"
 
 
 # Date parameter
@@ -70,6 +71,18 @@ path_final_loc_recogida = output_path + file_final_loc_recogida_name
 path_final_fch = output_path + file_final_fch_name
 path_image_pago_viaje = output_path + file_image_pago_viaje_name
 path_final_pago_viaje = output_path + file_final_pago_viaje_name
+
+
+# Logs files
+extract_log = "Extract_Process_" + format_date + ".log"
+transform_log = "Transform_Process_" + format_date + ".log"
+load_log = "Load_Process_" + format_date + ".log"
+
+
+# Paths and logs file names
+path_extract_log_name = logs_path + extract_log
+path_transform_log_name = logs_path + transform_log
+path_load_log_name = logs_path + load_log
 
 
 # Define lists catalogs

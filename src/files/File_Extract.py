@@ -9,6 +9,7 @@ import shutil
 import time
 import os
 
+
 # Create file in outpu path
 def createFile():
 
@@ -22,7 +23,7 @@ def createFile():
     
     # Write cvs file in temp path
     df.write.mode('append').csv(temp_path)
-    time.sleep(2)
+    time.sleep(10)
 
     # Move file from temp path to output path
     print("Rename the file created in the output path...\n")

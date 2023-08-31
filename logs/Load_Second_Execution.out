@@ -1,0 +1,102 @@
+
+The tables are being loading...
+
+The table CAT_TARIFA is being loading...
+root
+ |-- ID_TARIFA: integer (nullable = true)
+ |-- TARIFA: string (nullable = true)
+
+The file cat_final_tarifa_20230831.csv has been crated in output path
+	There aren't new records to insert into the CAT_TARIFA table
+
+The table CAT_TIPO_PAGO is being loading...
+root
+ |-- ID_TIPO_PAGO: integer (nullable = true)
+ |-- TIPO_PAGO: string (nullable = true)
+
+The file cat_final_tipo_pago_20230831.csv has been crated in output path
+	There aren't new records to insert into the CAT_TIPO_PAGO table
+
+The table CAT_PROVEEDOR is being loading...
+root
+ |-- ID_PROVEEDOR: integer (nullable = true)
+ |-- PROVEEDOR: string (nullable = true)
+
+The file cat_proveedor_20230831.csv has been crated in output path
+	There aren't new records to insert into the CAT_PROVEEDOR table
+
+The table CAT_LOCACION_DESCENSO is being loading...
+root
+ |-- LATITUD_DESCENSO: double (nullable = true)
+ |-- LONGITUD_DESCENSO: double (nullable = true)
+
+The file cat_final_loc_descenso_20230831.csv has been crated in output path
+	There aren't new records to insert into the CAT_LOCACION_DESCENSO table
+
+The table CAT_LOCACION_RECOGIDA is being loading...
+root
+ |-- LATITUD_RECOGIDA: double (nullable = true)
+ |-- LONGITUD_RECOGIDA: double (nullable = true)
+
+The file cat_final_loc_recogida_20230831.csv has been crated in output path
+	There aren't new records to insert into the CAT_LOCACION_RECOGIDA table
+
+The table DIM_FCH is being loading...
+root
+ |-- FCH_HRA_RECOGIDA: string (nullable = true)
+ |-- FCH_HRA_DESCENSO: string (nullable = true)
+
+The file dim_final_fecha_20230831.csv has been crated in output path
+	There aren't new records to insert into the CAT_LOCACION_RECOGIDA table
+
+The table FACT_PAGO_VIAJE is being loading...
+root
+ |-- ID_PROVEEDOR: integer (nullable = true)
+ |-- FCH_HRA_RECOGIDA: string (nullable = true)
+ |-- FCH_HRA_DESCENSO: string (nullable = true)
+ |-- ID_TARIFA: integer (nullable = true)
+ |-- LATITUD_RECOGIDA: double (nullable = true)
+ |-- LONGITUD_RECOGIDA: double (nullable = true)
+ |-- LATITUD_DESCENSO: double (nullable = true)
+ |-- LONGITUD_DESCENSO: double (nullable = true)
+ |-- ID_TIPO_PAGO: integer (nullable = true)
+ |-- NUM_PASAJEROS: integer (nullable = true)
+ |-- DISTANCIA_VIAJE: double (nullable = true)
+ |-- FLG_TIENDA_AVANCE: string (nullable = true)
+ |-- MONTO_TARIFA: double (nullable = true)
+ |-- EXTRA: double (nullable = true)
+ |-- IMP_MTA: double (nullable = true)
+ |-- MONTO_PROPINA: double (nullable = true)
+ |-- MONTO_PEAJE: double (nullable = true)
+ |-- RECARGO_MEJORA: double (nullable = true)
+ |-- MONTO_TOTAL: double (nullable = true)
+
+The file fact_image_pago_viaje_20230831.csv has been crated in output path
+root
+ |-- ID_PROVEEDOR: integer (nullable = true)
+ |-- ID_FCH: integer (nullable = true)
+ |-- ID_TARIFA: integer (nullable = true)
+ |-- ID_LOCACION_RECOGIDA: integer (nullable = true)
+ |-- ID_LOCACION_DESCENSO: integer (nullable = true)
+ |-- ID_TIPO_PAGO: integer (nullable = true)
+ |-- NUM_PASAJEROS: integer (nullable = true)
+ |-- DISTANCIA_VIAJE: double (nullable = true)
+ |-- FLG_TIENDA_AVANCE: string (nullable = true)
+ |-- MONTO_TARIFA: double (nullable = true)
+ |-- EXTRA: double (nullable = true)
+ |-- IMP_MTA: double (nullable = true)
+ |-- MONTO_PROPINA: double (nullable = true)
+ |-- MONTO_PEAJE: double (nullable = true)
+ |-- RECARGO_MEJORA: double (nullable = true)
+ |-- MONTO_TOTAL: double (nullable = true)
+
+The file fact_final_pago_viaje_20230831.csv has been crated in output path
+	There aren't new records to insert into the FACT_PAGO_VIAJE table
+
+
+Finally the paths are prepared for a new ETL process
+
+Delete files in the temp path
+Delete files in the output path
+
+The process has finished without errors.

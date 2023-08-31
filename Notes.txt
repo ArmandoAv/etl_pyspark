@@ -13,3 +13,9 @@ sql_user = ""
 sql_pwd = ""
 sql_db = ''
 sql_server = ""
+
+
+spark-submit Extract.py | tee ..\logs\Extract.out
+spark-submit Transform.py | tee ..\logs\Transform.out
+spark-submit Load.py | tee ..\logs\Load_First_Execution.out
+spark-submit Load.py | tee ..\logs\Load_Second_Execution.out

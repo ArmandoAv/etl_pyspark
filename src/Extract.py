@@ -8,7 +8,17 @@
 # The libraries are imported
 from files.File_Extract import *
 from pyspark.sql import SparkSession
+import logging
 
+
+# Create log file 
+logging.basicConfig(filename = path_extract_log_name, \
+                               format='%(asctime)s:%(levelname)s:%(message)s', \
+                               datefmt='%m/%d/%Y %I:%M:%S %p', \
+                               level = logging.DEBUG)
+logging.debug('This message should appear on the console')
+logging.info('So should this')
+logging.warning('And this, too')
 
 # DataFrame data is created in output path
 print("\nThe input DataFrame is being created...")

@@ -59,7 +59,7 @@ def readTables(table, final_path_file, file):
 
     # Create new csv file in temp path
     df_read_table.write.mode('append').csv(temp_path)
-    time.sleep(2)
+    time.sleep(10)
 
     # Delete past file created
     if os.path.exists(final_path_file) == True:

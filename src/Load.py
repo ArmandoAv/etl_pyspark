@@ -8,7 +8,17 @@ from files.File_Load import *
 from files.File_Clean import *
 from files.Table_Read_Load import *
 from pyspark.sql import SparkSession
+import logging
 
+
+# Create log file 
+logging.basicConfig(filename = path_load_log_name, \
+                               format='%(asctime)s:%(levelname)s:%(message)s', \
+                               datefmt='%m/%d/%Y %I:%M:%S %p', \
+                               level = logging.DEBUG)
+logging.debug('This message should appear on the console')
+logging.info('So should this')
+logging.warning('And this, too')
 
 # Spark session parameters are initialized
 sp = SparkSession.builder.master("local").appName("Load Tables In SQL").getOrCreate()
@@ -213,8 +223,9 @@ else:
     Paths are prepared for a new ETL process
 """
 # Clean paths for the new ETL process
-print("\nFinally the paths are prepared for a new ETL process")
+print("\nFinally the paths are prepared for a new ETL process...")
 cleanPaths()
 
 # Spark session stops
+print("\nThe process has finished without errors.")
 sp.stop()
