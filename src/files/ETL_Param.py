@@ -10,7 +10,7 @@ from pyspark.sql.types import IntegerType
 from pyspark.sql.types import DoubleType
 from pyspark.sql.types import DateType
 from pyspark.sql.types import Row
-from datetime import date
+from datetime import datetime
 from decouple import config
 
 
@@ -28,8 +28,9 @@ logs_path = "../logs/"
 
 
 # Date parameter
-current_date = date.today()
+current_date = datetime.today()
 format_date = current_date.strftime("%Y%m%d")
+format_log_date = current_date.strftime("%Y%m%d%H%M%S")
 
 
 # Files names
@@ -74,9 +75,9 @@ path_final_pago_viaje = output_path + file_final_pago_viaje_name
 
 
 # Logs files
-extract_log = "Extract_Process_" + format_date + ".log"
-transform_log = "Transform_Process_" + format_date + ".log"
-load_log = "Load_Process_" + format_date + ".log"
+extract_log = "Extract_Process_" + format_log_date + ".log"
+transform_log = "Transform_Process_" + format_log_date + ".log"
+load_log = "Load_Process_" + format_log_date + ".log"
 
 
 # Paths and logs file names

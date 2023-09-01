@@ -19,10 +19,10 @@ def cleanPaths():
     os.rename(output_path + file_csv_name, proces_path + file_csv_name)
 
     # Clean temp path
+    print("\nDelete files in the paths...")
     delete_temp_path = os.listdir(temp_path)
     
     if len(delete_temp_path) > 0:
-        print("\nDelete files in the temp path")
         for delete in delete_temp_path:
             os.remove(temp_path + delete)
 
@@ -30,6 +30,5 @@ def cleanPaths():
     delete_output_path = os.listdir(output_path)
     
     if len(delete_output_path) > 0:
-        print("Delete files in the output path")
         for delete in delete_output_path:
             os.remove(output_path + delete)

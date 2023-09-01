@@ -11,7 +11,7 @@ GO
 
 -------------------------------------------------------------
 -------------------------------------------------------------
------------------------ CREATE MODEL ------------------------
+----------------------- CREATE TABLES -----------------------
 -------------------------------------------------------------
 -------------------------------------------------------------
 
@@ -399,26 +399,71 @@ GO
 
 -------------------------------------------------------------
 -------------------------------------------------------------
+------------------------ CREATE VIEWS -----------------------
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+CREATE VIEW VCAT_LOCACION_DESCENSO
+AS 
+SELECT *
+FROM   dbo.CAT_LOCACION_DESCENSO
+GO
+
+CREATE VIEW VCAT_LOCACION_RECOGIDA
+AS 
+SELECT *
+FROM   dbo.CAT_LOCACION_RECOGIDA
+GO
+
+CREATE VIEW VCAT_PROVEEDOR
+AS 
+SELECT *
+FROM   dbo.CAT_PROVEEDOR
+GO
+
+CREATE VIEW VCAT_TARIFA
+AS 
+SELECT *
+FROM   dbo.CAT_TARIFA
+GO
+
+CREATE VIEW VCAT_TIPO_PAGO
+AS 
+SELECT *
+FROM   dbo.CAT_TIPO_PAGO
+GO
+
+CREATE VIEW VDIM_FCH
+AS 
+SELECT *
+FROM   dbo.DIM_FCH
+GO
+
+CREATE VIEW VFACT_PAGO_VIAJE
+AS 
+SELECT *
+FROM   dbo.FACT_PAGO_VIAJE
+GO
+
+
+-------------------------------------------------------------
+-------------------------------------------------------------
 ---------------------- RESET SEQUENCES ----------------------
 -------------------------------------------------------------
 -------------------------------------------------------------
 
---- SEQ_FCH
 ALTER SEQUENCE SEQ_FCH
 RESTART WITH 1
 GO
 
---- SEQ_LOCACION_DESCENSO
 ALTER SEQUENCE SEQ_LOCACION_DESCENSO
 RESTART WITH 1
 GO
 
---- SEQ_LOCACION_RECOGIDA
 ALTER SEQUENCE SEQ_LOCACION_RECOGIDA
 RESTART WITH 1
 GO
 
---- SEQ_PAGO_VIAJE
 ALTER SEQUENCE SEQ_PAGO_VIAJE
 RESTART WITH 1
 GO
@@ -454,27 +499,27 @@ GO
 
 -------------------------------------------------------------
 -------------------------------------------------------------
------------------------ SELECT TABLES -----------------------
+----------------------- SELECT VIEWS ------------------------
 -------------------------------------------------------------
 -------------------------------------------------------------
 
 SELECT * 
-FROM CAT_TARIFA;
+FROM VCAT_TARIFA;
 
 SELECT * 
-FROM CAT_TIPO_PAGO;
+FROM VCAT_TIPO_PAGO;
 
 SELECT * 
-FROM CAT_PROVEEDOR;
+FROM VCAT_PROVEEDOR;
 
 SELECT * 
-FROM CAT_LOCACION_RECOGIDA;
+FROM VCAT_LOCACION_RECOGIDA;
 
 SELECT * 
-FROM CAT_LOCACION_DESCENSO;
+FROM VCAT_LOCACION_DESCENSO;
 
 SELECT * 
-FROM DIM_FCH;
+FROM VDIM_FCH;
 
 SELECT * 
-FROM FACT_PAGO_VIAJE;
+FROM VFACT_PAGO_VIAJE;

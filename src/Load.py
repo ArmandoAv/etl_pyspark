@@ -19,6 +19,7 @@ logging.basicConfig(filename = path_load_log_name, \
 logging.debug('This message should appear on the console')
 logging.info('So should this')
 logging.warning('And this, too')
+logging.error('It is a important message')
 
 # Spark session parameters are initialized
 sp = SparkSession.builder.master("local").appName("Load Tables In SQL").getOrCreate()

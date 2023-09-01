@@ -23,14 +23,29 @@ def loadTable(struct, path_file, table, mode_load):
     df_table.printSchema()
  
     try:
-        df_table.write \
-            .format(config('CONN')) \
-            .mode(mode_load) \
-            .option("url", URL) \
-            .option("dbtable", table) \
-            .option("user", config('SQL_USER')) \
-            .option("password", config('SQL_PWD')) \
-            .save()
+        if mode_load == overwrite:
+            # With truncate option the table keep the original schema
+            # only overwrite the data
+            df_table.write \
+                .option("truncate", "true") \
+                .format(config('CONN')) \
+                .mode(mode_load) \
+                .option("url", URL) \
+                .option("dbtable", table) \
+                .option("user", config('SQL_USER')) \
+                .option("password", config('SQL_PWD')) \
+                .save()
+        
+        else:
+
+            df_table.write \
+                .format(config('CONN')) \
+                .mode(mode_load) \
+                .option("url", URL) \
+                .option("dbtable", table) \
+                .option("user", config('SQL_USER')) \
+                .option("password", config('SQL_PWD')) \
+                .save()
 
     except ValueError as error:
         print("Connector write failed." + error)
@@ -59,7 +74,7 @@ def readTables(table, final_path_file, file):
 
     # Create new csv file in temp path
     df_read_table.write.mode('append').csv(temp_path)
-    time.sleep(10)
+    time.sleep(20)
 
     # Delete past file created
     if os.path.exists(final_path_file) == True:
