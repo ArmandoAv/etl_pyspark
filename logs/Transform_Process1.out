@@ -1,0 +1,98 @@
+
+The transformations are being processed...
+
+Delete files in temp path
+
+The Dataframe for cat_tarifa_20230904.csv has been created
++---------+-------------+
+|id_tarifa|       tarifa|
++---------+-------------+
+|        1|Standard rate|
+|        2|          JFK|
++---------+-------------+
+only showing top 2 rows
+
+Rename the file created in the temp path...
+
+The file cat_tarifa_20230904.csv has been crated in output path with 6 records.
+
+The Dataframe for cat_tipo_pago_20230904.csv has been created
++------------+-----------+
+|id_tipo_pago|  tipo_pago|
++------------+-----------+
+|           1|Credit card|
+|           2|       Cash|
++------------+-----------+
+only showing top 2 rows
+
+Rename the file created in the temp path...
+
+The file cat_tipo_pago_20230904.csv has been crated in output path with 6 records.
+
+The Dataframe for cat_proveedor_20230904.csv has been created
++------------+---------+
+|id_proveedor|proveedor|
++------------+---------+
+|           1|   Normal|
+|           2|    Black|
++------------+---------+
+
+Rename the file created in the temp path...
+
+The file cat_proveedor_20230904.csv has been crated in output path with 2 records.
+
+The schema of the uber_data_20230904.csv file:
+
+The Dataframe for cat_locacion_descenso_20230904.csv has been created
++----------------+-----------------+
+|LATITUD_DESCENSO|LONGITUD_DESCENSO|
++----------------+-----------------+
+|     40.74612808|     -74.00426483|
+|     40.73316574|      -74.0059433|
++----------------+-----------------+
+only showing top 2 rows
+
+Rename the file created in the temp path...
+
+The file cat_locacion_descenso_20230904.csv has been crated in output path with 99809 records.
+
+The Dataframe for cat_locacion_recogida_20230904.csv has been created
++----------------+-----------------+
+|LATITUD_RECOGIDA|LONGITUD_RECOGIDA|
++----------------+-----------------+
+|     40.76515198|     -73.97674561|
+|     40.76792526|     -73.98348236|
++----------------+-----------------+
+only showing top 2 rows
+
+Rename the file created in the temp path...
+
+The file cat_locacion_recogida_20230904.csv has been crated in output path with 99809 records.
+
+The Dataframe for dim_fecha_20230904.csv has been created
++-------------------+-------------------+
+|   FCH_HRA_RECOGIDA|   FCH_HRA_DESCENSO|
++-------------------+-------------------+
+|2016-03-01 00:00:00|2016-03-01 00:07:55|
+|2016-03-01 00:00:00|2016-03-01 00:11:06|
++-------------------+-------------------+
+only showing top 2 rows
+
+Rename the file created in the temp path...
+
+The file dim_fecha_20230904.csv has been crated in output path with 99809 records.
+
+The Dataframe for fact_pago_viaje_20230904.csv has been created
++------------+-------------------+-------------------+---------+----------------+-----------------+----------------+-----------------+------------+-------------+---------------+-----------------+------------+-----+-------+-------------+-----------+--------------+-----------+
+|ID_PROVEEDOR|   FCH_HRA_RECOGIDA|   FCH_HRA_DESCENSO|ID_TARIFA|LATITUD_RECOGIDA|LONGITUD_RECOGIDA|LATITUD_DESCENSO|LONGITUD_DESCENSO|ID_TIPO_PAGO|NUM_PASAJEROS|DISTANCIA_VIAJE|FLG_TIENDA_AVANCE|MONTO_TARIFA|EXTRA|IMP_MTA|MONTO_PROPINA|MONTO_PEAJE|RECARGO_MEJORA|MONTO_TOTAL|
++------------+-------------------+-------------------+---------+----------------+-----------------+----------------+-----------------+------------+-------------+---------------+-----------------+------------+-----+-------+-------------+-----------+--------------+-----------+
+|           1|2016-03-01 00:00:00|2016-03-01 00:07:55|        1|     40.76515198|     -73.97674561|     40.74612808|     -74.00426483|           1|            1|            2.5|                N|         9.0|  0.5|    0.5|         2.05|        0.0|           0.3|      12.35|
+|           1|2016-03-01 00:00:00|2016-03-01 00:11:06|        1|     40.76792526|     -73.98348236|     40.73316574|      -74.0059433|           1|            1|            2.9|                N|        11.0|  0.5|    0.5|         3.05|        0.0|           0.3|      15.35|
++------------+-------------------+-------------------+---------+----------------+-----------------+----------------+-----------------+------------+-------------+---------------+-----------------+------------+-----+-------+-------------+-----------+--------------+-----------+
+only showing top 2 rows
+
+Rename the file created in the temp path...
+
+The file fact_pago_viaje_20230904.csv has been crated in output path with 99809 records.
+
+The Transform process has finished without errors.

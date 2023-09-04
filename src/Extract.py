@@ -6,7 +6,7 @@
 """
 
 # The libraries are imported
-from files.File_Extract import *
+from aux_src.File_Extract import *
 from pyspark.sql import SparkSession
 import logging
 
@@ -28,3 +28,5 @@ deleteFile()
 
 # Create CSV file in the output path
 createFile()
+
+print("The Extract process has finished without errors.")

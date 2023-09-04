@@ -3,10 +3,11 @@
 """
 
 # The libraries are imported
-from files.ETL_Param import *
-from files.File_Load import *
-from files.File_Clean import *
-from files.Table_Read_Load import *
+from aux_src.ETL_Param import *
+from aux_src.File_Load import *
+from aux_src.File_Clean import *
+from aux_src.File_Bad_Load import *
+from aux_src.Table_Read_Load import *
 from pyspark.sql import SparkSession
 import logging
 
@@ -213,8 +214,9 @@ readTables(table_pago_viaje, path_final_pago_viaje, file_final_pago_viaje_name)
 with open(path_final_pago_viaje) as myfile:
     total_lines = sum(1 for line in myfile)
 
-# Load final table DIM_FCH
+# Load final table FACT_PAGO_VIAJE
 if total_lines > 0:
+    createBadFile()
     loadTable(schema_final_pago_viaje, path_final_pago_viaje, tb_pago_viaje, append)
 else:
     print(f"\tThere aren't new records to insert into the {tbf_pago_viaje} table\n")
@@ -228,5 +230,5 @@ print("\nFinally the paths are prepared for a new ETL process...")
 cleanPaths()
 
 # Spark session stops
-print("\nThe process has finished without errors.")
+print("\nThe Load process has finished without errors.")
 sp.stop()

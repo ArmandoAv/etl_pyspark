@@ -4,8 +4,8 @@
 """
 
 # The libraries are imported
-from files.ETL_Param import *
-from files.File_Transform import *
+from aux_src.ETL_Param import *
+from aux_src.File_Transform import *
 from pyspark.sql import SparkSession
 from pyspark.sql.types import Row
 from pyspark.sql.functions import col
@@ -32,15 +32,24 @@ print("\nThe transformations are being processed...\n")
     this file is created with hard code because
     the info doesn't exist in the input json file
 """
-# A DataFrame is created with the list tarifa
-df_tarifa = sp.createDataFrame(list_tarifa)
 
-# Delete files in temp path
+# Delete possible files in temp path
 deleteFile()
 
 # Write a DataFrame to file csv
+df_tarifa = sp.createDataFrame([
+    Row(id_tarifa = 1, tarifa = "Standard rate"),
+    Row(id_tarifa = 2, tarifa = "JFK"),
+    Row(id_tarifa = 3, tarifa = "Newark"),
+    Row(id_tarifa = 4, tarifa = "Nassau or Westchester"),
+    Row(id_tarifa = 5, tarifa = "Negotiated fare"),
+    Row(id_tarifa = 6, tarifa = "Group ride")
+])
+
+print(f"The Dataframe for {file_tarifa_name} has been created")
+df_tarifa.show(2)
 df_tarifa.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(20)
+time.sleep(5)
 
 # Move the file from temp path to output path
 createFile(file_tarifa_name)
@@ -51,15 +60,23 @@ createFile(file_tarifa_name)
     this file is created with hard code because
     the info doesn't exist in the input json file
 """
-# A DataFrame is created with the list
-df_tipo_pago = sp.createDataFrame(list_tipo_pago)
-
-# Delete files in temp path
+# Delete possible files in temp path
 deleteFile()
 
 # Write a DataFrame to file csv
+df_tipo_pago = sp.createDataFrame([
+    Row(id_tipo_pago = 1, tipo_pago = "Credit card"),
+    Row(id_tipo_pago = 2, tipo_pago = "Cash"),
+    Row(id_tipo_pago = 3, tipo_pago = "No charge"),
+    Row(id_tipo_pago = 4, tipo_pago = "Dispute"),
+    Row(id_tipo_pago = 5, tipo_pago = "Unknown"),
+    Row(id_tipo_pago = 6, tipo_pago = "Voided trip")
+])
+
+print(f"The Dataframe for {file_tipo_pago_name} has been created")
 df_tipo_pago.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(20)
+df_tipo_pago.show(2)
+time.sleep(5)
 
 # Move file from temp path to output path
 createFile(file_tipo_pago_name)
@@ -69,15 +86,19 @@ createFile(file_tipo_pago_name)
     this file is created with hard code because
     the info doesn't exist in the input json file
 """
-# A DataFrame is created with the list
-df_proveedor = sp.createDataFrame(list_proveedor)
-
-# Delete files in temp path
+# Delete possible files in temp path
 deleteFile()
 
 # Write a DataFrame to file csv
+df_proveedor = sp.createDataFrame([
+    Row(id_proveedor = 1, proveedor = "Normal"),
+    Row(id_proveedor = 2, proveedor = "Black")
+])
+
+print(f"The Dataframe for {file_proveedor_name} has been created")
 df_proveedor.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(20)
+df_proveedor.show(2)
+time.sleep(5)
 
 # Move file from temp path to output path
 createFile(file_proveedor_name)
@@ -95,15 +116,18 @@ df_input_csv = sp.read.schema(schema_csv).csv(path_csv_name)
     Created the csv file to CAT_LOCACION_DESCENSO
 """
 
-# A DataFrame is created with the necessary columns
-df_locacion_descenso = df_input_csv.select(col("LATITUD_DESCENSO"), col("LONGITUD_DESCENSO"))
-
-# Delete files in temp path
+# Delete possible files in temp path
 deleteFile()
 
+# A DataFrame is created with the necessary columns
+df_locacion_descenso = df_input_csv.select(col("LATITUD_DESCENSO"), col("LONGITUD_DESCENSO"))
+time.sleep(5)
+
 # Write a DataFrame to file csv
+print(f"The Dataframe for {file_locacion_descenso_name} has been created")
 df_locacion_descenso.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(20)
+df_locacion_descenso.show(2)
+time.sleep(5)
 
 # Move file from temp path to output path
 createFile(file_locacion_descenso_name)
@@ -113,15 +137,18 @@ createFile(file_locacion_descenso_name)
     Created the csv file to CAT_LOCACION_RECOGIDA
 """
 
-# A DataFrame is created with the necessary columns
-df_locacion_recogida = df_input_csv.select(col("LATITUD_RECOGIDA"), col("LONGITUD_RECOGIDA"))
-
-# Delete files in temp path
+# Delete possible files in temp path
 deleteFile()
 
+# A DataFrame is created with the necessary columns
+df_locacion_recogida = df_input_csv.select(col("LATITUD_RECOGIDA"), col("LONGITUD_RECOGIDA"))
+time.sleep(5)
+
 # Write a DataFrame to file csv
+print(f"The Dataframe for {file_locacion_recogida_name} has been created")
 df_locacion_recogida.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(20)
+df_locacion_recogida.show(2)
+time.sleep(5)
 
 # Move file from temp path to output path
 createFile(file_locacion_recogida_name)
@@ -131,15 +158,18 @@ createFile(file_locacion_recogida_name)
     Created the csv file to DIM_FCH
 """
 
-# A DataFrame is created with the necessary columns
-df_fecha = df_input_csv.select(col("FCH_HRA_RECOGIDA"), col("FCH_HRA_DESCENSO"))
-
-# Delete files in temp path
+# Delete possible files in temp path
 deleteFile()
 
+# A DataFrame is created with the necessary columns
+df_fecha = df_input_csv.select(col("FCH_HRA_RECOGIDA"), col("FCH_HRA_DESCENSO"))
+time.sleep(5)
+
 # Write a DataFrame to file csv
+print(f"The Dataframe for {file_fecha_name} has been created")
 df_fecha.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(20)
+df_fecha.show(2)
+time.sleep(5)
 
 # Move file from temp path to output path
 createFile(file_fecha_name)
@@ -149,6 +179,9 @@ createFile(file_fecha_name)
     Created the csv file to FACT_PAGO_VIAJES
 """
 
+# Delete possible files in temp path
+deleteFile()
+
 # A DataFrame is created with the necessary columns
 df_pago_viajes = df_input_csv.select(col("ID_PROVEEDOR"), col("FCH_HRA_RECOGIDA"), col("FCH_HRA_DESCENSO"), \
                                      col("ID_TARIFA"), col("LATITUD_RECOGIDA"), col("LONGITUD_RECOGIDA"), \
@@ -156,17 +189,18 @@ df_pago_viajes = df_input_csv.select(col("ID_PROVEEDOR"), col("FCH_HRA_RECOGIDA"
                                      col("NUM_PASAJEROS"), col("DISTANCIA_VIAJE"), col("FLG_TIENDA_AVANCE"), \
                                      col("MONTO_TARIFA"), col("EXTRA"), col("IMP_MTA"), col("MONTO_PROPINA"), \
                                      col("MONTO_PEAJE"), col("RECARGO_MEJORA"), col("MONTO_TOTAL"))
-
-# Delete files in temp path
-deleteFile()
+time.sleep(5)
 
 # Write a DataFrame to file csv
+print(f"The Dataframe for {file_pago_viaje_name} has been created")
 df_pago_viajes.write.mode('append').options(delimiter=',').csv(temp_path)
-time.sleep(20)
+df_pago_viajes.show(2)
+time.sleep(10)
 
 # Move file from temp path to output path
 createFile(file_pago_viaje_name)
 
 
 # Spark session stops
+print("The Transform process has finished without errors.")
 sp.stop()
