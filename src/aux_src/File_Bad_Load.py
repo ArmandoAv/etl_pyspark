@@ -5,6 +5,7 @@
 # The libraries are imported
 from aux_src.ETL_Param import *
 from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
 import shutil
 import time
 import os
@@ -24,11 +25,13 @@ def createBadFile():
     if os.path.exists(path_bad_pago_viaje) == True:
         os.remove(path_bad_pago_viaje)
 
-    # Create new csv file in bad path
-    df_bad_pago_viaje = df.filter(df.ID_PROVEEDOR.isNull() |  \
-                                  df.ID_FCH.isNull() | \
-                                  df.ID_LOCACION_RECOGIDA.isNull() | \
-                                  df.ID_LOCACION_DESCENSO.isNull())
+    # Create new csv file in bad path with IDs columns null
+    df_bad_pago_viaje = df.filter(col("ID_PROVEEDOR").isNull() |  \
+                                  col("ID_FCH").isNull() | \
+                                  col("ID_TARIFA").isNull() | \
+                                  col("ID_LOCACION_RECOGIDA").isNull() | \
+                                  col("ID_LOCACION_DESCENSO").isNull() | \
+                                  col("ID_TIPO_PAGO").isNull())
 
     df_bad_pago_viaje.write.mode('append').csv(temp_path)
     time.sleep(5)

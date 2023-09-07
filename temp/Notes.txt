@@ -1,0 +1,2 @@
+This file was created so that when uploading the project to GitHub, the directory was created.
+This file doesn't affect the execution of the processes.

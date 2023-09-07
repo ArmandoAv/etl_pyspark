@@ -17,23 +17,24 @@
         <li>
           <a href="#installation">Installation</a>
           <ul>
-             <li><a href="#python">Python</a></li>
-             <li><a href="#java">Java</a></li>
-             <li><a href="#apache-spark">Apache Spark</a></li>
-             <li><a href="#winutils">Winutils</a></li>
-             <li><a href="#sql-server">SQL Server</a></li>
-             <li><a href="#env-file">env file</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#apache-spark">Apache Spark</a></li>
+            <li><a href="#winutils">Winutils</a></li>
+            <li><a href="#sql-server">SQL Server</a></li>
+            <li><a href="#env-file">env file</a></li>
           </ul>
         </li>
       </ul>
     </li>
     <li>
-       <a href="#usage">Usage</a>
-       <ul>
-       <li><a href="#extract">Extract</a></li>
-       <li><a href="#transform">Transform</a></li>
-       <li><a href="#load">Load</a></li>
-       <li><a href="#validation">Validation</a></li>
+      <a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#extract">Extract</a></li>
+        <li><a href="#transform">Transform</a></li>
+        <li><a href="#load">Load</a></li>
+        <li><a href="#validation">Validation</a></li>
+      </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -90,10 +91,10 @@ In the following link there is the express version of SQL Server
 
 https://www.microsoft.com/es-mx/sql-server/sql-server-downloads
 
-In the directory software are the files
+In the software path are the files
 
-+winutils.exe
-+apache-spark-sql-connector.jar.
+- winutils.exe
+- apache-spark-sql-connector.jar.
 
 ### Installation
 
@@ -271,7 +272,7 @@ spark-submit Extract.py
 This process creates a log file in the logs path automatically, but if it is also required to obtain an out type file with the information that the console leaves, you must execute it with the following command, the file will be generated in the logs directory
 
 ```
-spark-submit Extract.py | tee ..\logs\Extract_Process.out
+spark-submit Extract.py | tee ..\logs\Extract_Process_First_Execution.out
 ```
 
 This process reads the json file from the input path and creates a csv file in the output path, which will be used to create the corresponding files to be able to load the tables created in the SQL Server.
@@ -287,7 +288,7 @@ spark-submit Transform.py
 This process creates a log file in the logs path automatically, but if it is also required to obtain an out type file with the information that the console leaves, you must execute it with the following command, the file will be generated in the logs directory
 
 ```
-spark-submit Transform.py | tee ..\logs\Transform_Process.out
+spark-submit Transform.py | tee ..\logs\Transform_Process_First_Execution.out
 ```
 
 This process creates seven files from the csv file created in the previous process in the output path, these files are the basis for loading the information in the tables created in the SQL Server.
@@ -316,7 +317,13 @@ Finally, the process deletes the created files and creates a copy of the json fi
 
 At the end of executing the loading process, it is validated that the information is already available in the database with the SELECT VIEWS script, from the Script_Database_Model.sql file of the database route.
 
-To see more clearly how the created validations work, for information management. The load process must be executed once more, since the process, not finding new information, will not carry out the loads to the final tables.
+To see more clearly how the created validations work, for information management. The process must be executed once more, since the process not finding new information, will not carry out the loads to the final tables, you must execute them with the following commands
+
+```
+spark-submit Extract.py | tee ..\logs\Extract_Process_Second_Execution.out
+spark-submit Transform.py | tee ..\logs\Transform_Process_Second_Execution.out
+spark-submit Load.py | tee ..\logs\Load_Process_Second_Execution.out
+```
 
 <!-- CONTRIBUTING -->
 
@@ -337,13 +344,14 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Add info.
+Add info. Ver el archivo de NY de los viajes para los catalogos y el link de donde se obtuvo el archivo original
 
 <!-- CONTACT -->
 
 ## Contact
 
 You can contact me in my LinkedIn profile
+
 Armando Avila - [@Armando Avila](https://www.linkedin.com/in/armando-avila-419a8623/)
 
 Project Link: [https://github.com/ArmandoAv/etl_pyspark](https://github.com/ArmandoAv/etl_pyspark)

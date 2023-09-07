@@ -2,7 +2,7 @@
 
 In this file some common errors will be listed and how they can be fixed.
 
-# Transform.py
+## Transform.py
 
 Error:
 py4j.protocol.Py4JJavaError: An error occurred while calling o90.csv.
@@ -33,7 +33,7 @@ To correct it you must run the python job Transform.py again
 spark-submit Transform.py
 ```
 
-# Load.py
+## Load.py
 
 Error:
 py4j.protocol.Py4JJavaError: An error occurred while calling o56.save. : com.microsoft.sqlserver.jdbc.SQLServerException: No se pudo realizar la conexi¾n TCP/IP al host localhost, puerto 1433. Error: "Connection refused: connect. Verifique las propiedades de conexi¾n, compruebe que hay una instancia de SQL Server ejecutßndose en el host y aceptando las conexiones TCP/IP en el puerto y compruebe que no hay ning·n firewall bloqueando las conexiones TCP en el puerto.".
@@ -65,3 +65,7 @@ IndexError: pop from an empty deque
 
 Cause:
 This warning occurs when it try to delete a connection that does not exist the process corrects it when it have a connection again, however it sends this warning before continuing with the loads of the tables
+
+## Contributing
+
+If you find any new bugs and their possible fix, I hope you can help by contributing this will be **greatly appreciated**.
