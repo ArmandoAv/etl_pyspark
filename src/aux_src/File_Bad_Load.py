@@ -25,10 +25,10 @@ def createBadFile():
         os.remove(path_bad_pago_viaje)
 
     # Create new csv file in bad path
-    df_bad_pago_viaje = df.filter(df.ID_PROVEEDOR.isNull()). \
-                           filter(df.ID_FCH.isNull()). \
-                           filter(df.ID_LOCACION_RECOGIDA.isNull()). \
-                           filter(df.ID_LOCACION_DESCENSO.isNull())
+    df_bad_pago_viaje = df.filter(df.ID_PROVEEDOR.isNull() |  \
+                                  df.ID_FCH.isNull() | \
+                                  df.ID_LOCACION_RECOGIDA.isNull() | \
+                                  df.ID_LOCACION_DESCENSO.isNull())
 
     df_bad_pago_viaje.write.mode('append').csv(temp_path)
     time.sleep(5)
@@ -52,7 +52,7 @@ def createBadFile():
         total_lines = sum(1 for line in new_file)
 
     if total_lines > 0:
-        raise ValueError (f"The file {file_bad_pago_viaje_name} has been crated in bad path wit {total_lines} records\n" \
+        raise ValueError (f"The file {file_bad_pago_viaje_name} has been crated in bad path wit {total_lines} records.\n" \
             "Please check because there are records in the bad file.\n")
     
     # Spark session stops

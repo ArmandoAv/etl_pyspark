@@ -2,44 +2,97 @@
 The tables are being loading...
 
 The table CAT_TARIFA is being loading...
-Traceback (most recent call last):
-  File "C:\spark\python\lib\pyspark.zip\pyspark\sql\utils.py", line 63, in deco
-  File "C:\spark\python\lib\py4j-0.10.7-src.zip\py4j\protocol.py", line 328, in get_return_value
-py4j.protocol.Py4JJavaError: An error occurred while calling o46.load.
-: org.apache.spark.sql.AnalysisException: Path does not exist: file:/C:/Users/armando/Desktop/Git/etl_pyspark/output/cat_tarifa_20230904.csv;
-	at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$org$apache$spark$sql$execution$datasources$DataSource$$checkAndGlobPathIfNecessary$1.apply(DataSource.scala:558)
-	at org.apache.spark.sql.execution.datasources.DataSource$$anonfun$org$apache$spark$sql$execution$datasources$DataSource$$checkAndGlobPathIfNecessary$1.apply(DataSource.scala:545)
-	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
-	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:241)
-	at scala.collection.immutable.List.foreach(List.scala:392)
-	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:241)
-	at scala.collection.immutable.List.flatMap(List.scala:355)
-	at org.apache.spark.sql.execution.datasources.DataSource.org$apache$spark$sql$execution$datasources$DataSource$$checkAndGlobPathIfNecessary(DataSource.scala:545)
-	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:359)
-	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:223)
-	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
-	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:178)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
-	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
-	at py4j.Gateway.invoke(Gateway.java:282)
-	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
-	at py4j.commands.CallCommand.execute(CallCommand.java:79)
-	at py4j.GatewayConnection.run(GatewayConnection.java:238)
-	at java.lang.Thread.run(Thread.java:745)
+root
+ |-- ID_TARIFA: integer (nullable = true)
+ |-- TARIFA: string (nullable = true)
 
+The file cat_final_tarifa_yyyymmdd.csv has been crated in output path
+    There aren't new records to insert into the CAT_TARIFA table
 
-During handling of the above exception, another exception occurred:
+The table CAT_TIPO_PAGO is being loading...
+root
+ |-- ID_TIPO_PAGO: integer (nullable = true)
+ |-- TIPO_PAGO: string (nullable = true)
 
-Traceback (most recent call last):
-  File "C:/Users/armando/Desktop/Git/etl_pyspark/src/Load.py", line 37, in <module>
-    loadTable(schema_tarifa, path_tarifa_name, tb_im_tarifa, overwrite)
-  File "C:\Users\armando\Desktop\Git\etl_pyspark\src\aux_src\File_Load.py", line 22, in loadTable
-    df_table = sp.read.load(path_file, schema=struct, format="csv")
-  File "C:\spark\python\lib\pyspark.zip\pyspark\sql\readwriter.py", line 166, in load
-  File "C:\spark\python\lib\py4j-0.10.7-src.zip\py4j\java_gateway.py", line 1257, in __call__
-  File "C:\spark\python\lib\pyspark.zip\pyspark\sql\utils.py", line 69, in deco
-pyspark.sql.utils.AnalysisException: 'Path does not exist: file:/C:/Users/armando/Desktop/Git/etl_pyspark/output/cat_tarifa_20230904.csv;'
+The file cat_final_tipo_pago_yyyymmdd.csv has been crated in output path
+    There aren't new records to insert into the CAT_TIPO_PAGO table
+
+The table CAT_PROVEEDOR is being loading...
+root
+ |-- ID_PROVEEDOR: integer (nullable = true)
+ |-- PROVEEDOR: string (nullable = true)
+
+The file cat_proveedor_yyyymmdd.csv has been crated in output path
+    There aren't new records to insert into the CAT_PROVEEDOR table
+
+The table CAT_LOCACION_DESCENSO is being loading...
+root
+ |-- LATITUD_DESCENSO: double (nullable = true)
+ |-- LONGITUD_DESCENSO: double (nullable = true)
+
+The file cat_final_loc_descenso_yyyymmdd.csv has been crated in output path
+    There aren't new records to insert into the CAT_LOCACION_DESCENSO table
+
+The table CAT_LOCACION_RECOGIDA is being loading...
+root
+ |-- LATITUD_RECOGIDA: double (nullable = true)
+ |-- LONGITUD_RECOGIDA: double (nullable = true)
+
+The file cat_final_loc_recogida_yyyymmdd.csv has been crated in output path
+    There aren't new records to insert into the CAT_LOCACION_RECOGIDA table
+
+The table DIM_FCH is being loading...
+root
+ |-- FCH_HRA_RECOGIDA: string (nullable = true)
+ |-- FCH_HRA_DESCENSO: string (nullable = true)
+
+The file dim_final_fecha_yyyymmdd.csv has been crated in output path
+    There aren't new records to insert into the DIM_FCH table
+
+The table FACT_PAGO_VIAJE is being loading...
+root
+ |-- ID_PROVEEDOR: integer (nullable = true)
+ |-- FCH_HRA_RECOGIDA: string (nullable = true)
+ |-- FCH_HRA_DESCENSO: string (nullable = true)
+ |-- ID_TARIFA: integer (nullable = true)
+ |-- LATITUD_RECOGIDA: double (nullable = true)
+ |-- LONGITUD_RECOGIDA: double (nullable = true)
+ |-- LATITUD_DESCENSO: double (nullable = true)
+ |-- LONGITUD_DESCENSO: double (nullable = true)
+ |-- ID_TIPO_PAGO: integer (nullable = true)
+ |-- NUM_PASAJEROS: integer (nullable = true)
+ |-- DISTANCIA_VIAJE: double (nullable = true)
+ |-- FLG_TIENDA_AVANCE: string (nullable = true)
+ |-- MONTO_TARIFA: double (nullable = true)
+ |-- EXTRA: double (nullable = true)
+ |-- IMP_MTA: double (nullable = true)
+ |-- MONTO_PROPINA: double (nullable = true)
+ |-- MONTO_PEAJE: double (nullable = true)
+ |-- RECARGO_MEJORA: double (nullable = true)
+ |-- MONTO_TOTAL: double (nullable = true)
+
+The file fact_image_pago_viaje_yyyymmdd.csv has been crated in output path
+root
+ |-- ID_PROVEEDOR: integer (nullable = true)
+ |-- ID_FCH: integer (nullable = true)
+ |-- ID_TARIFA: integer (nullable = true)
+ |-- ID_LOCACION_RECOGIDA: integer (nullable = true)
+ |-- ID_LOCACION_DESCENSO: integer (nullable = true)
+ |-- ID_TIPO_PAGO: integer (nullable = true)
+ |-- NUM_PASAJEROS: integer (nullable = true)
+ |-- DISTANCIA_VIAJE: double (nullable = true)
+ |-- FLG_TIENDA_AVANCE: string (nullable = true)
+ |-- MONTO_TARIFA: double (nullable = true)
+ |-- EXTRA: double (nullable = true)
+ |-- IMP_MTA: double (nullable = true)
+ |-- MONTO_PROPINA: double (nullable = true)
+ |-- MONTO_PEAJE: double (nullable = true)
+ |-- RECARGO_MEJORA: double (nullable = true)
+ |-- MONTO_TOTAL: double (nullable = true)
+
+The file fact_final_pago_viaje_yyyymmdd.csv has been crated in output path
+    There aren't new records to insert into the FACT_PAGO_VIAJE table
+
+Finally the paths are prepared for a new ETL process...
+
+The Load process has finished without errors.

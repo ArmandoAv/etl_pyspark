@@ -40,7 +40,7 @@ def createFile(file):
         print(f"The file {file} has been crated in output path with {total_lines} records.\n")
         
     else:
-        raise ValueError (f"The file {file} has been crated in output path without records\n" \
+        raise ValueError (f"The file {file} has been crated in output path without records.\n" \
             "Please check because there aren't records in the file.\n")
 
 

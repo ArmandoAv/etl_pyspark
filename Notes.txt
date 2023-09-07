@@ -5,6 +5,10 @@ pip install python-decouple
 
 crear un archivo .env
 
+pip install py4j
+
+agreagar conexiones al deque para evitar errores de conexion
+
 Agregar las variables de conexion de la BD
 
 # Connector parameters

@@ -38,3 +38,10 @@ def cleanPaths():
     if len(delete_output_path) > 0:
         for delete in delete_output_path:
             os.remove(output_path + delete)
+    
+    # Clean bad path
+    delete_bads_path = os.listdir(bads_path)
+
+    if len(delete_bads_path) > 0:
+        for delete in delete_bads_path:
+            os.remove(bads_path + delete)

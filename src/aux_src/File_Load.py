@@ -7,8 +7,8 @@
 from aux_src.ETL_Param import *
 from decouple import config
 from pyspark.sql import SparkSession
-import time
 import shutil
+import time
 import os
 
 
@@ -21,6 +21,7 @@ def loadTable(struct, path_file, table, mode_load):
     #df_table = sp.read.schema(schema).csv(path_file)
     df_table = sp.read.load(path_file, schema=struct, format="csv")
     df_table.printSchema()
+    time.sleep(5)
  
     try:
         if mode_load == overwrite:
