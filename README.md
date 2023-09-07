@@ -27,7 +27,14 @@
         </li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+       <a href="#usage">Usage</a>
+       <ul>
+       <li><a href="#extract">Extract</a></li>
+       <li><a href="#transform">Transform</a></li>
+       <li><a href="#load">Load</a></li>
+       <li><a href="#validation">Validation</a></li>
+    </li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -85,29 +92,57 @@ https://www.microsoft.com/es-mx/sql-server/sql-server-downloads
 
 In the directory software are the files
 
-winutils.exe
-apache-spark-sql-connector.jar.
++winutils.exe
++apache-spark-sql-connector.jar.
 
 ### Installation
 
-To install the software mentioned above, the following steps must be performed.
+To install the software mentioned above, the following steps must be performed. The following steps are to install the required software in a windows environment.
 
 #### Python
 
-This project is done with previous knowledge of Python, so the software installation steps are not reviewed. The following python libraries should be installed with the following commands
+To install Python, run the file python-3.7.3-amd64.exe which was downloaded from the link. When executing the file, in the same process it indicates that if you want to save the Python variable in the environment variables, so it is no longer necessary to add them when finishing the installation.
 
-pip install python-dotenv
-pip install python-decouple
+A cmd terminal is opened and validated, execute the next command
+
+```
+python --version
+```
+
+Python has a library with which you can install plugins on the command line called pip. Copy the script from the following link into a notepad
+
+https://bootstrap.pypa.io/get-pip.py
+
+Save the copied script as get-pip.py and open a cmd terminal in the path where you saved the file and executed the following command
+
+```
+python get-pip.py
+```
+
+The following environment variable must be created
+
+```
+PIP_HOME = C:\Users\.....\AppData\Local\Programs\Python\Python37
+```
+
+The %PIP_HOME%\Scripts variable is added to the Path variable.
 
 #### Java
 
-To install jdk and jre, run the file jdk-...-i586.exe which was downloaded from the link. When executing the file, the paths C:\jdk and C:\jre must be indicated when installing each one. When the jdk and jre are installed, the following environment variable is created
+To install jdk and jre, run the file jdk-...-i586.exe which was downloaded from the link. When executing the file, the paths C:\jdk and C:\jre must be indicated when installing each one. When the jdk and jre are installed, the following environment variable must be created
 
+```
 JAVA_HOME = C:\jdk
+```
 
 The %JAVA_HOME%\bin variable is added to the Path variable.
 
-A cmd terminal is opened and it is validated that the java or java --version command is valid.
+A cmd terminal is opened and it is validated that any of the following commands are valid.
+
+```
+java
+java --version
+```
 
 #### Apache Spark
 
@@ -115,15 +150,21 @@ Once you have the spark-2.4.3-bin-hadoop2.7.tgz file, you must create the C:\spa
 
 Once the content has been copied, look in the C:\spark\conf directory for the log4j.properties.template file and rename it as log4j.properties. Then open the renamed file with a text editor and on the next line of the file
 
+```
 log4j.rootCategory=INFO, console
+```
 
 It should be changed to
 
+```
 log4j.rootCategory=ERROR, console
+```
 
-This is done so that when executing Spark commands in a terminal, it does not fill up with information that is not necessary. The following environment variable is created
+This is done so that when executing Spark commands in a terminal, it does not fill up with information that is not necessary. The following environment variable must be created
 
+```
 SPARK_HOME = C:\spark
+```
 
 The %SPARK_HOME%\bin variable is added to the Path variable.
 
@@ -131,13 +172,19 @@ Finally, the apache-spark-sql-connector.jar file must be copied to the path C:/s
 
 #### Winutils
 
-You must create the C:\winutils\bin directory and copy the winutils.exe file to that path. Once the file has been copied, the following environment variable is created
+You must create the C:\winutils\bin directory and copy the winutils.exe file to that path. Once the file has been copied, the following environment variable must be created
 
+```
 HADOOP_HOME = C:\winutils
+```
 
 The %HADOOP_HOME%\bin variable is added to the Path variable.
 
-A cmd terminal is opened and validated, execute the pyspark command, if everything works correctly, the Spark environment will start.
+A cmd terminal is opened and validated, execute the next command, if everything works correctly, the Spark environment will start.
+
+```
+pyspark
+```
 
 #### SQL Server
 
@@ -157,8 +204,146 @@ The other scripts in the file are to delete the tables and restart the sequences
 
 It is necessary to create an environment file called .env in the path where the project will be.
 
+```
+# File with connector parameters
 CONN = com.microsoft.sqlserver.jdbc.spark
-SQL_USER = sa
-SQL_PWD = your_pwd_sa
+SQL_USER = your_db_user
+SQL_PWD = your_db_pwd
 SQL_DB = UBER_ANALISIS
 SQL_SERVER = localhost
+```
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+To run this project, you first need to make a copy of the files and directories, this can be done with the following command in a cmd terminal
+
+```
+git clone https://github.com/ArmandoAv/etl_pyspark.git
+```
+
+Once you have all the files locally, you can run the process.
+The process is divided into three parts
+
+1. Extraction
+1. Transformation
+1. Load
+
+Since it is an ETL process, it must be executed in order. A Python virtual environment is needed, the following command must be executed from a cmd terminal in the path where the project was copied.
+
+```
+python -m venv venv
+```
+
+Once the virtual environment is created, it is activated in the same terminal with the following command
+
+```
+venv\Scripts\activate
+```
+
+To deactivate the virtual environment in the same path you have to execute the following command
+
+```
+deactivate
+```
+
+The following python libraries should be installed with the following commands
+
+```
+pip install python-dotenv
+pip install python-decouple
+```
+
+The files that must be executed are the ones in the src path, the files that are in the aux_src path contain variables or functions that help in the execution of the files.
+
+> [!NOTE]
+> The execution of the processes must be carried out on the same day, since the files that are generated in their names have the current date, so if they are executed on a different day, the **transform** and **load** processes will fail because they cannot find the files.
+
+### Extract
+
+To execute the extract process, you only have to execute the Extract.py file with the following command in the src path
+
+```
+spark-submit Extract.py
+```
+
+This process creates a log file in the logs path automatically, but if it is also required to obtain an out type file with the information that the console leaves, you must execute it with the following command, the file will be generated in the logs directory
+
+```
+spark-submit Extract.py | tee ..\logs\Extract_Process.out
+```
+
+This process reads the json file from the input path and creates a csv file in the output path, which will be used to create the corresponding files to be able to load the tables created in the SQL Server.
+
+### Transform
+
+To execute the transform process, you only have to execute the Transform.py file with the following command in the src path
+
+```
+spark-submit Transform.py
+```
+
+This process creates a log file in the logs path automatically, but if it is also required to obtain an out type file with the information that the console leaves, you must execute it with the following command, the file will be generated in the logs directory
+
+```
+spark-submit Transform.py | tee ..\logs\Transform_Process.out
+```
+
+This process creates seven files from the csv file created in the previous process in the output path, these files are the basis for loading the information in the tables created in the SQL Server.
+
+### Load
+
+To execute the load process, you only have to execute the Load.py file with the following command in the src path
+
+```
+spark-submit Load.py
+```
+
+This process creates a log file in the logs path automatically, but if it is also required to obtain an out type file with the information that the console leaves, you must execute it with the following command, the file will be generated in the logs directory
+
+```
+spark-submit Load.py | tee ..\logs\Load_Process_First_Execution.out
+```
+
+This process takes the files created in the previous process and performs loads in the image and temporary tables. After performing these first loads, create new files comparing the information from the final tables of the model to load only the new information.
+
+This functionality was made to make the uploads more efficient and simulate the uploads to a DWH. With the new files created, the load is done towards the final tables.
+
+Finally, the process deletes the created files and creates a copy of the json file and the first csv file in the process path.
+
+### Validation
+
+At the end of executing the loading process, it is validated that the information is already available in the database with the SELECT VIEWS script, from the Script_Database_Model.sql file of the database route.
+
+To see more clearly how the created validations work, for information management. The load process must be executed once more, since the process, not finding new information, will not carry out the loads to the final tables.
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Add info.
+
+<!-- CONTACT -->
+
+## Contact
+
+You can contact me in my LinkedIn profile
+Armando Avila - [@Armando Avila](https://www.linkedin.com/in/armando-avila-419a8623/)
+
+Project Link: [https://github.com/ArmandoAv/etl_pyspark](https://github.com/ArmandoAv/etl_pyspark)
