@@ -180,7 +180,7 @@ with open(path_final_fch) as myfile:
 if total_lines > 0:
     loadTable(schema_final_fch, path_final_fch, tb_fch, append)
 else:
-    print(f"\tThere aren't new records to insert into the {tb_fch} table\n")
+    print(f"\tThere aren't new records to insert into the {tbf_fch} table\n")
 
 
 """

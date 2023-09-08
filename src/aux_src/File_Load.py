@@ -95,15 +95,14 @@ def readTables(table, final_path_file, file):
     for delete in files_delete:
         os.remove(temp_path + delete)
 
-    # Validating that the file has records
+    # Validating the records in the file
     with open(final_path_file) as myfile:
         total_lines = sum(1 for line in myfile)
 
-    # Load final table FACT_PAGO_VIAJE
     if total_lines == 0:
-        print(f"The file {file} has been crated in output path without records")
+        print(f"The file {file} has been crated in output path without records.")
     else:
-        print(f"The file {file} has been crated in output path with {total_lines} records")
+        print(f"The file {file} has been crated in output path with {total_lines} records.")
 
     # Spark session stops
     sp.stop()

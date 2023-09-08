@@ -50,8 +50,8 @@ def createFile():
             print(f"The file {file_csv} has been crated in output path with {total_lines} records.\n")
         
     else:
-        raise ValueError (f"The file {file_csv} has been crated in output path without records\n" \
-            "Please check because there aren't records in the file.\n")
+        raise ValueError (f"The file {file_csv} has been crated in output path without records.\n" \
+            "Please check because there are no records in the file, as it is created from the json input file.\n")
 
     # Spark session stops
     sp.stop()

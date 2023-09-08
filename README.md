@@ -94,7 +94,7 @@ https://www.microsoft.com/es-mx/sql-server/sql-server-downloads
 In the software path are the files
 
 - winutils.exe
-- apache-spark-sql-connector.jar.
+- apache-spark-sql-connector.jar
 
 ### Installation
 
@@ -181,9 +181,10 @@ HADOOP_HOME = C:\winutils
 
 The %HADOOP_HOME%\bin variable is added to the Path variable.
 
-A cmd terminal is opened and validated, execute the next command, if everything works correctly, the Spark environment will start.
+A cmd terminal is opened and validated, execute the nexts commands, if everything works correctly, the Spark environment will start.
 
 ```
+cd C:\spark
 pyspark
 ```
 
@@ -203,7 +204,7 @@ The other scripts in the file are to delete the tables and restart the sequences
 
 #### env file
 
-It is necessary to create an environment file called .env in the path where the project will be.
+It is necessary to create an environment file called .env in the path where the project will be. The file must contain the following
 
 ```
 # File with connector parameters
@@ -213,6 +214,8 @@ SQL_PWD = your_db_pwd
 SQL_DB = UBER_ANALISIS
 SQL_SERVER = localhost
 ```
+
+This is an environment variables file and isn't a Python file, so variables aren't enclosed in quotation marks.
 
 <!-- USAGE EXAMPLES -->
 
@@ -335,16 +338,21 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+1. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+1. Push to the Branch (`git push origin feature/AmazingFeature`)
+1. Open a Pull Request
 
 <!-- LICENSE -->
 
 ## License
 
-Add info. Ver el archivo de NY de los viajes para los catalogos y el link de donde se obtuvo el archivo original
+This project can be used to see how an ETL process works with Spark. The dataset used for this project is based on the file uber_data.csv in the https://github.com/darshilparmar/uber-etl-pipeline-data-engineering-project project.
+
+For more info about dataset can be found here:
+
+1. Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+1. Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
 
 <!-- CONTACT -->
 
