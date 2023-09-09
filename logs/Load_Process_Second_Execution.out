@@ -6,48 +6,192 @@ root
  |-- ID_TARIFA: integer (nullable = true)
  |-- TARIFA: string (nullable = true)
 
-The file cat_final_tarifa_yyyymmdd.csv has been crated in output path without records.
-        There aren't new records to insert into the CAT_TARIFA table.
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
+
+The file cat_final_tarifa_20230909.csv has been crated in output path without records.
+        There aren't new records to insert into the CAT_TARIFA table
+
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
 
 The table CAT_TIPO_PAGO is being loading...
 root
  |-- ID_TIPO_PAGO: integer (nullable = true)
  |-- TIPO_PAGO: string (nullable = true)
 
-The file cat_final_tipo_pago_20230908.csv has been crated in output path without records.
-        There aren't new records to insert into the CAT_TIPO_PAGO table.
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
+
+The file cat_final_tipo_pago_20230909.csv has been crated in output path without records.
+        There aren't new records to insert into the CAT_TIPO_PAGO table
+
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
 
 The table CAT_PROVEEDOR is being loading...
 root
  |-- ID_PROVEEDOR: integer (nullable = true)
  |-- PROVEEDOR: string (nullable = true)
 
-The file cat_final_proveedor_20230908.csv has been crated in output path without records.
-        There aren't new records to insert into the CAT_PROVEEDOR table.
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
+
+The file cat_final_proveedor_20230909.csv has been crated in output path without records.
+        There aren't new records to insert into the CAT_PROVEEDOR table
+
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
 
 The table CAT_LOCACION_DESCENSO is being loading...
 root
  |-- LATITUD_DESCENSO: double (nullable = true)
  |-- LONGITUD_DESCENSO: double (nullable = true)
 
-The file cat_final_loc_descenso_20230908.csv has been crated in output path without records.
-        There aren't new records to insert into the CAT_LOCACION_DESCENSO table.
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
+
+The file cat_final_loc_descenso_20230909.csv has been crated in output path without records.
+        There aren't new records to insert into the CAT_LOCACION_DESCENSO table
+
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
 
 The table CAT_LOCACION_RECOGIDA is being loading...
 root
  |-- LATITUD_RECOGIDA: double (nullable = true)
  |-- LONGITUD_RECOGIDA: double (nullable = true)
 
-The file cat_final_loc_recogida_20230908.csv has been crated in output path without records.
-        There aren't new records to insert into the CAT_LOCACION_RECOGIDA table.
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
+
+The file cat_final_loc_recogida_20230909.csv has been crated in output path without records.
+        There aren't new records to insert into the CAT_LOCACION_RECOGIDA table
+
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
 
 The table DIM_FCH is being loading...
 root
  |-- FCH_HRA_RECOGIDA: string (nullable = true)
  |-- FCH_HRA_DESCENSO: string (nullable = true)
 
-The file dim_final_fecha_20230908.csv has been crated in output path without records.
-        There aren't new records to insert into the DIM_FCH table.
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
+
+The file dim_final_fecha_20230909.csv has been crated in output path without records.
+        There aren't new records to insert into the DIM_FCH table
+
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
 
 The table FACT_PAGO_VIAJE is being loading...
 root
@@ -71,7 +215,19 @@ root
  |-- RECARGO_MEJORA: double (nullable = true)
  |-- MONTO_TOTAL: double (nullable = true)
 
-The file fact_image_pago_viaje_20230908.csv has been crated in output path with 99809 records.
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
+
+The file fact_image_pago_viaje_20230909.csv has been crated in output path with 99809 records.
 root
  |-- ID_PROVEEDOR: integer (nullable = true)
  |-- ID_FCH: integer (nullable = true)
@@ -90,8 +246,32 @@ root
  |-- RECARGO_MEJORA: double (nullable = true)
  |-- MONTO_TOTAL: double (nullable = true)
 
-The file fact_final_pago_viaje_20230908.csv has been crated in output path without records.
-        There aren't new records to insert into the FACT_PAGO_VIAJE table.
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
+
+The file fact_final_pago_viaje_20230909.csv has been crated in output path without records.
+        There aren't new records to insert into the FACT_PAGO_VIAJE table
+
+The record for the log table is been created...
+
+The log table DIM_LOG_CARGA is being loading...
+root
+ |-- FCH_LOG: string (nullable = true)
+ |-- ID_PROCESO: integer (nullable = true)
+ |-- NOM_ARCHIVO: string (nullable = true)
+ |-- REGISTROS_NOM_ARCHIVO: integer (nullable = true)
+ |-- NOM_TABLA: string (nullable = true)
+ |-- REGISTROS_INSERTADOS_TABLA: integer (nullable = true)
+ |-- COMENTARIO: string (nullable = true)
 
 
 Finally the paths are prepared for a new ETL process...

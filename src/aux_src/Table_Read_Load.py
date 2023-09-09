@@ -9,7 +9,8 @@ from aux_src.ETL_Param import *
 # Validation CAT_TARIFA
 table_tarifa = f"""SELECT 
        IM.ID_TARIFA,
-	   IM.TARIFA
+	   IM.TARIFA,
+	   CAST(CURRENT_TIMESTAMP AS DATE) AS FCH_CARGA
 FROM   {tb_im_tarifa} AS IM
 LEFT JOIN {tb_tarifa} AS FN
 ON  IM.ID_TARIFA = FN.ID_TARIFA
@@ -19,7 +20,8 @@ WHERE FN.ID_TARIFA IS NULL"""
 # Validation CAT_TIPO_PAGO
 table_tipo_pago = f"""SELECT 
        IM.ID_TIPO_PAGO,
-	   IM.TIPO_PAGO
+	   IM.TIPO_PAGO,
+	   CAST(CURRENT_TIMESTAMP AS DATE) AS FCH_CARGA
 FROM   {tb_im_tipo_pago} AS IM
 LEFT JOIN {tb_tipo_pago} AS FN
 ON  IM.ID_TIPO_PAGO = FN.ID_TIPO_PAGO
@@ -29,7 +31,8 @@ WHERE FN.ID_TIPO_PAGO IS NULL"""
 # Validation CAT_PROVEEDOR
 table_proveedor = f"""SELECT 
        IM.ID_PROVEEDOR,
-	   IM.PROVEEDOR
+	   IM.PROVEEDOR,
+	   CAST(CURRENT_TIMESTAMP AS DATE) AS FCH_CARGA
 FROM   {tb_im_proveedor} AS IM
 LEFT JOIN {tb_proveedor} AS FN
 ON  IM.ID_PROVEEDOR = FN.ID_PROVEEDOR
@@ -40,7 +43,8 @@ WHERE FN.ID_PROVEEDOR IS NULL"""
 table_locacion_descenso = f"""SELECT DISTINCT
        NULL AS ID_LOCACION_DESCENSO,
 	   IM.LATITUD_DESCENSO,
-	   IM.LONGITUD_DESCENSO
+	   IM.LONGITUD_DESCENSO,
+	   CAST(CURRENT_TIMESTAMP AS DATE) AS FCH_CARGA
 FROM   {tb_im_locacion_descenso} AS IM
 LEFT JOIN {tb_locacion_descenso} AS FN
 ON  IM.LATITUD_DESCENSO  = FN.LATITUD_DESCENSO
@@ -52,7 +56,8 @@ WHERE FN.LATITUD_DESCENSO IS NULL"""
 table_locacion_recogida = f"""SELECT DISTINCT
        NULL AS ID_LOCACION_RECOGIDA,
 	   IM.LATITUD_RECOGIDA,
-	   IM.LONGITUD_RECOGIDA
+	   IM.LONGITUD_RECOGIDA,
+	   CAST(CURRENT_TIMESTAMP AS DATE) AS FCH_CARGA
 FROM   {tb_im_locacion_recogida} AS IM
 LEFT JOIN {tb_locacion_recogida} AS FN
 ON  IM.LATITUD_RECOGIDA  = FN.LATITUD_RECOGIDA
@@ -92,7 +97,8 @@ table_fch = f"""SELECT DISTINCT
 	   CASE WHEN LEN(CAST(DATEDIFF (SECOND, IM.FCH_HRA_RECOGIDA, IM.FCH_HRA_DESCENSO) % 60 AS VARCHAR)) < 2
 	            THEN '0' + (CAST(DATEDIFF (SECOND, IM.FCH_HRA_RECOGIDA, IM.FCH_HRA_DESCENSO) % 60 AS VARCHAR))
 			ELSE (CAST(DATEDIFF (SECOND, IM.FCH_HRA_RECOGIDA, IM.FCH_HRA_DESCENSO) % 60 AS VARCHAR))
-	   END AS DURACION_VIAJE
+	   END AS DURACION_VIAJE,
+	   CAST(CURRENT_TIMESTAMP AS DATE) AS FCH_CARGA
 FROM   {tb_im_fch} AS IM
 LEFT JOIN {tb_fch} AS FN
 ON  IM.FCH_HRA_RECOGIDA = FN.FCH_HRA_RECOGIDA
@@ -148,7 +154,8 @@ table_pago_viaje = f"""SELECT
        IM.MONTO_PROPINA,
        IM.MONTO_PEAJE,
        IM.RECARGO_MEJORA,
-       IM.MONTO_TOTAL
+       IM.MONTO_TOTAL,
+	   CAST(CURRENT_TIMESTAMP AS DATE) AS FCH_CARGA
 FROM   {tb_im_pago_viaje} IM
 LEFT JOIN {tb_pago_viaje} FN
 ON  IM.ID_PROVEEDOR         = FN.ID_PROVEEDOR
@@ -159,3 +166,85 @@ AND IM.ID_LOCACION_DESCENSO = FN.ID_LOCACION_DESCENSO
 AND IM.ID_TIPO_PAGO         = FN.ID_TIPO_PAGO
 AND IM.MONTO_TOTAL          = FN.MONTO_TOTAL
 WHERE FN.ID_PROVEEDOR IS NULL"""
+
+
+# Validation log IM_CAT_TARIFA
+log_im_tb_tarifa = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA
+FROM   {tb_im_tarifa}"""
+
+
+# Validation log CAT_TARIFA
+log_final_tb_tarifa = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA
+FROM   {tb_tarifa}
+WHERE  FCH_CARGA = CAST(CURRENT_TIMESTAMP AS DATE)"""
+
+
+# Validation log IM_CAT_TIPO_PAGO
+log_im_tb_tipo_pago = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA 
+FROM   {tb_im_tipo_pago}"""
+
+
+# Validation log CAT_TIPO_PAGO
+log_final_tb_tipo_pago = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA 
+FROM   {tb_tipo_pago}
+WHERE  FCH_CARGA = CAST(CURRENT_TIMESTAMP AS DATE)"""
+
+
+# Validation log IM_CAT_PROVEEDOR
+log_im_tb_proveedor = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA  
+FROM   {tb_im_proveedor}"""
+
+
+# Validation log CAT_PROVEEDOR
+log_final_tb_proveedor = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA  
+FROM   {tb_proveedor}
+WHERE  FCH_CARGA = CAST(CURRENT_TIMESTAMP AS DATE)"""
+
+
+# Validation log IM_CAT_LOCACION_DESCENSO
+log_im_tb_loc_descenso = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA
+FROM   {tb_im_locacion_descenso}"""
+
+
+# Validation log CAT_LOCACION_DESCENSO
+log_final_tb_loc_descenso = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA
+FROM   {tb_locacion_descenso}
+WHERE  FCH_CARGA = CAST(CURRENT_TIMESTAMP AS DATE)"""
+
+
+# Validation log IM_CAT_LOCACION_RECOGIDA
+log_im_tb_loc_recogida = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA
+FROM   {tb_im_locacion_recogida}"""
+
+
+# Validation log CAT_LOCACION_RECOGIDA
+log_final_tb_loc_recogida = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA
+FROM   {tb_locacion_recogida}
+WHERE  FCH_CARGA = CAST(CURRENT_TIMESTAMP AS DATE)"""
+
+
+# Validation log IM_DIM_FCH
+log_im_tb_fch = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA
+FROM   {tb_im_fch}"""
+
+
+# Validation log DIM_FCH
+log_final_tb_fch = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA
+FROM   {tb_fch}
+WHERE  FCH_CARGA = CAST(CURRENT_TIMESTAMP AS DATE)"""
+
+
+# Validation log TMP_FACT_PAGO_VIAJE
+log_tmp_tb_pago_viaje = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA 
+FROM   {tb_tmp_pago_viaje}"""
+
+
+# Validation log IM_FACT_PAGO_VIAJE
+log_im_tb_pago_viaje = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA 
+FROM   {tb_im_pago_viaje}"""
+
+
+# Validation log FACT_PAGO_VIAJE
+log_final_tb_pago_viaje = f"""SELECT COUNT(*) AS ROWS_INSERTADOS_TABLA 
+FROM   {tb_pago_viaje}
+WHERE  FCH_CARGA = CAST(CURRENT_TIMESTAMP AS DATE)"""

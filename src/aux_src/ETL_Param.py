@@ -28,9 +28,9 @@ bads_path = "../bads/"
 
 
 # Date parameter
-current_date = datetime.today()
-format_date = current_date.strftime("%Y%m%d")
-format_log_date = current_date.strftime("%Y%m%d%H%M%S")
+current_datetime = datetime.today()
+format_date = current_datetime.strftime("%Y%m%d")
+format_log_date = current_datetime.strftime("%Y%m%d%H%M%S")
 
 
 # Files names
@@ -52,6 +52,7 @@ file_final_loc_recogida_name = "cat_final_loc_recogida_" + format_date + ".csv"
 file_final_fch_name = "dim_final_fecha_" + format_date + ".csv"
 file_image_pago_viaje_name =  "fact_image_pago_viaje_" + format_date + ".csv"
 file_final_pago_viaje_name =  "fact_final_pago_viaje_" + format_date + ".csv"
+file_log_carga_name = "DIM_LOG_CARGA_" + format_date + ".csv"
 
 
 # Path and files names
@@ -72,6 +73,7 @@ path_final_loc_recogida = output_path + file_final_loc_recogida_name
 path_final_fch = output_path + file_final_fch_name
 path_image_pago_viaje = output_path + file_image_pago_viaje_name
 path_final_pago_viaje = output_path + file_final_pago_viaje_name
+path_log_carga = logs_path + file_log_carga_name
 
 
 # Logs files
@@ -115,6 +117,7 @@ tb_im_tipo_pago = "UBER_ANALISIS.dbo.IM_CAT_TIPO_PAGO"
 tb_im_fch = "UBER_ANALISIS.dbo.IM_DIM_FCH"
 tb_im_pago_viaje = "UBER_ANALISIS.dbo.IM_FACT_PAGO_VIAJE"
 tb_tmp_pago_viaje = "UBER_ANALISIS.dbo.TMP_FACT_PAGO_VIAJE"
+tb_log_carga = "UBER_ANALISIS.dbo.DIM_LOG_CARGA"
 
 
 # Final tables names
@@ -125,6 +128,7 @@ tbf_tarifa = "CAT_TARIFA"
 tbf_tipo_pago = "CAT_TIPO_PAGO"
 tbf_fch = "DIM_FCH"
 tbf_pago_viaje = "FACT_PAGO_VIAJE"
+tbf_log_carga = "DIM_LOG_CARGA"
 
 
 # Define tables schemas
@@ -135,16 +139,37 @@ schema_proveedor = StructType([
     StructField("PROVEEDOR",StringType(),True)
 ])
 
+# Schema final CAT_PROVEEDOR
+schema_final_proveedor = StructType([
+    StructField("ID_PROVEEDOR",IntegerType(),True),
+    StructField("PROVEEDOR",StringType(),True),
+    StructField("FCH_CARGA", DateType(),True)
+])
+
 # Schema CAT_TARIFA
 schema_tarifa = StructType([
-    StructField("ID_TARIFA",IntegerType(),False),
+    StructField("ID_TARIFA",IntegerType(),True),
     StructField("TARIFA",StringType(),True) 
+])
+
+# Schema final CAT_TARIFA
+schema_final_tarifa = StructType([
+    StructField("ID_TARIFA",IntegerType(),True),
+    StructField("TARIFA",StringType(),True),
+    StructField("FCH_CARGA", DateType(),True)
 ])
 
 # Schema CAT_TIPO_PAGO
 schema_tipo_pago = StructType([
-    StructField("ID_TIPO_PAGO",IntegerType(),False),
+    StructField("ID_TIPO_PAGO",IntegerType(),True),
     StructField("TIPO_PAGO",StringType(),True)
+])
+
+# Schema final CAT_TIPO_PAGO
+schema_final_tipo_pago = StructType([
+    StructField("ID_TIPO_PAGO",IntegerType(),True),
+    StructField("TIPO_PAGO",StringType(),True),
+    StructField("FCH_CARGA",DateType(),True)
 ])
 
 # Schema CAT_LOCACION_DESCENSO
@@ -157,7 +182,8 @@ schema_locacion_descenso = StructType([
 schema_final_loc_descenso = StructType([
     StructField("ID_LOCACION_DESCENSO",IntegerType(),True),
     StructField("LATITUD_DESCENSO",DoubleType(),True),
-    StructField("LONGITUD_DESCENSO",DoubleType(),True)
+    StructField("LONGITUD_DESCENSO",DoubleType(),True),
+    StructField("FCH_CARGA",DateType(),True)
 ])
 
 # Schema CAT_LOCACION_RECOGIDA
@@ -170,7 +196,8 @@ schema_locacion_recogida = StructType([
 schema_final_loc_recogida = StructType([
     StructField("ID_LOCACION_RECOGIDA",IntegerType(),True),
     StructField("LATITUD_RECOGIDA",DoubleType(),True),
-    StructField("LONGITUD_RECOGIDA",DoubleType(),True)
+    StructField("LONGITUD_RECOGIDA",DoubleType(),True),
+    StructField("FCH_CARGA",DateType(),True)
 ])
 
 # Schema DIM_FCH
@@ -200,7 +227,8 @@ schema_final_fch = StructType([
     StructField("HRA_HRA_DESCENSO",StringType(),True),
     StructField("HRA_DESCENSO",IntegerType(),True),
     StructField("MIN_DESCENSO",IntegerType(),True),
-    StructField("DURACION_VIAJE",StringType(),True)
+    StructField("DURACION_VIAJE",StringType(),True),
+    StructField("FCH_CARGA",DateType(),True)
 ])
 
 # Schema FACT_PAGO_VIAJE
@@ -264,7 +292,19 @@ schema_final_pago_viaje = StructType([
     StructField("MONTO_PROPINA",DoubleType(),True),
     StructField("MONTO_PEAJE",DoubleType(),True),
     StructField("RECARGO_MEJORA",DoubleType(),True),
-    StructField("MONTO_TOTAL",DoubleType(),True)
+    StructField("MONTO_TOTAL",DoubleType(),True),
+    StructField("FCH_CARGA",DateType(),True)
+])
+
+# Schema log DIM_LOG_CARGA
+schema_log_carga = StructType([
+    StructField('FCH_LOG', StringType()),
+    StructField('ID_PROCESO', IntegerType()),
+    StructField('NOM_ARCHIVO', StringType()),
+    StructField('REGISTROS_NOM_ARCHIVO', IntegerType()),
+    StructField('NOM_TABLA', StringType()),
+    StructField('REGISTROS_INSERTADOS_TABLA', IntegerType()),
+    StructField('COMENTARIO', StringType())
 ])
 
 

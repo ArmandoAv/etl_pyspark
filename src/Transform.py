@@ -1,7 +1,18 @@
-"""
-    Files for data model tables are created from 
-    the uber_data file
-"""
+###################################################################################
+#                                                                                 #
+# Process: ETL Project (Transform)                                                #
+# Created by: Armando Avila                                                       #
+# Purpose: Files for data model tables are created from the uber_data file and    #
+#          some defined lists                                                     #
+# Comment: Run File_Transform.py file functions                                   #
+#          createFile()                                                           #
+#          deleteFile()                                                           #
+#          Get parameters from ETL_Param.py file                                  #
+# Created: 2023-08                                                                #
+# Modified:                                                                       #
+#                                                                                 #
+###################################################################################
+
 
 # The libraries are imported
 from aux_src.ETL_Param import *

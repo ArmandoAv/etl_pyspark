@@ -45,3 +45,7 @@ def cleanPaths():
     if len(delete_bads_path) > 0:
         for delete in delete_bads_path:
             os.remove(bads_path + delete)
+    
+    # Clean log file
+    if os.path.exists(path_log_carga) == True:
+        os.remove(path_log_carga)

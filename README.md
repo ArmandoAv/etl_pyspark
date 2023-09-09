@@ -33,6 +33,7 @@
         <li><a href="#extract">Extract</a></li>
         <li><a href="#transform">Transform</a></li>
         <li><a href="#load">Load</a></li>
+        <li><a href="#considerations">Considerations</a></li>
         <li><a href="#validation">Validation</a></li>
       </ul>
     </li>
@@ -315,6 +316,10 @@ This process takes the files created in the previous process and performs loads 
 This functionality was made to make the uploads more efficient and simulate the uploads to a DWH. With the new files created, the load is done towards the final tables.
 
 Finally, the process deletes the created files and creates a copy of the json file and the first csv file in the process path.
+
+### Considerations
+
+Add info...
 
 ### Validation
 

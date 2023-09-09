@@ -1,9 +1,16 @@
-"""
-    Gets the interface from a json file and transforms it 
-    into a flat file for further information handling and
-    move the file from input path to output path
-    simulating a data extraction
-"""
+###################################################################################
+#                                                                                 #
+# Process: ETL Project (Extract)                                                  #
+# Created by: Armando Avila                                                       #
+# Purpose: Gets the interface from a json file and transforms it into a flat file #
+# Comment: Run File_Extract.py file functions                                     #
+#          deleteFile()                                                           #
+#          createFile()                                                           #
+# Created: 2023-08                                                                #
+# Modified:                                                                       #
+#                                                                                 #
+###################################################################################
+
 
 # The libraries are imported
 from aux_src.File_Extract import *
