@@ -1,0 +1,3308 @@
+09/11/2023 01:26:37 PM:DEBUG:This message should appear on the console
+09/11/2023 01:26:37 PM:INFO:So should this
+09/11/2023 01:26:37 PM:WARNING:And this, too
+09/11/2023 01:26:37 PM:DEBUG:Command to send: A
+ab5d18987bb2aea7b5799402d97adf14c546eca76a68c7dc36e7b6e75669b61b
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: j
+i
+rj
+org.apache.spark.SparkConf
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: j
+i
+rj
+org.apache.spark.api.java.*
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: j
+i
+rj
+org.apache.spark.api.python.*
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: j
+i
+rj
+org.apache.spark.ml.python.*
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: j
+i
+rj
+org.apache.spark.mllib.api.python.*
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: j
+i
+rj
+org.apache.spark.sql.*
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: j
+i
+rj
+org.apache.spark.sql.api.python.*
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: j
+i
+rj
+org.apache.spark.sql.hive.*
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: j
+i
+rj
+scala.Tuple2
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: r
+u
+SparkConf
+rj
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ycorg.apache.spark.SparkConf
+09/11/2023 01:26:37 PM:DEBUG:Command to send: i
+org.apache.spark.SparkConf
+bTrue
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro0
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+set
+sspark.master
+slocal
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro1
+09/11/2023 01:26:37 PM:DEBUG:Command to send: m
+d
+o1
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+set
+sspark.app.name
+sCreate File
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro2
+09/11/2023 01:26:37 PM:DEBUG:Command to send: m
+d
+o2
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+contains
+sspark.serializer.objectStreamReset
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ybfalse
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+set
+sspark.serializer.objectStreamReset
+s100
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro3
+09/11/2023 01:26:37 PM:DEBUG:Command to send: m
+d
+o3
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+contains
+sspark.rdd.compress
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ybfalse
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+set
+sspark.rdd.compress
+sTrue
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro4
+09/11/2023 01:26:37 PM:DEBUG:Command to send: m
+d
+o4
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+contains
+sspark.master
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+contains
+sspark.app.name
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+contains
+sspark.master
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+get
+sspark.master
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yslocal
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+contains
+sspark.app.name
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+get
+sspark.app.name
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ysCreate File
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+contains
+sspark.home
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ybfalse
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o0
+getAll
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yto5
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+e
+o5
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yi5
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+g
+o5
+i0
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro6
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o6
+_1
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ysspark.master
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o6
+_2
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yslocal
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+e
+o5
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yi5
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+g
+o5
+i1
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro7
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o7
+_1
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ysspark.rdd.compress
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o7
+_2
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ysTrue
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+e
+o5
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yi5
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+g
+o5
+i2
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro8
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o8
+_1
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ysspark.app.name
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o8
+_2
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ysCreate File
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+e
+o5
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yi5
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+g
+o5
+i3
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro9
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o9
+_1
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ysspark.serializer.objectStreamReset
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o9
+_2
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ys100
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+e
+o5
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yi5
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+g
+o5
+i4
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yro10
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o10
+_1
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ysspark.submit.deployMode
+09/11/2023 01:26:37 PM:DEBUG:Command to send: c
+o10
+_2
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ysclient
+09/11/2023 01:26:37 PM:DEBUG:Command to send: a
+e
+o5
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yi5
+09/11/2023 01:26:37 PM:DEBUG:Command to send: m
+d
+o5
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:37 PM:DEBUG:Command to send: r
+u
+JavaSparkContext
+rj
+e
+
+09/11/2023 01:26:37 PM:DEBUG:Answer received: !ycorg.apache.spark.api.java.JavaSparkContext
+09/11/2023 01:26:37 PM:DEBUG:Command to send: i
+org.apache.spark.api.java.JavaSparkContext
+ro0
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yro11
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+o11
+sc
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yro12
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+o12
+conf
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yro13
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+PythonAccumulatorV2
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonAccumulatorV2
+09/11/2023 01:26:40 PM:DEBUG:Command to send: i
+org.apache.spark.api.python.PythonAccumulatorV2
+s127.0.0.1
+i64631
+sab5d18987bb2aea7b5799402d97adf14c546eca76a68c7dc36e7b6e75669b61b
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yro14
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+o11
+sc
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yro15
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+o15
+register
+ro14
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+PythonUtils
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonUtils
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+getEncryptionEnabled
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ym
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+getEncryptionEnabled
+ro11
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ybfalse
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache.spark
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache.spark.SparkFiles
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ycorg.apache.spark.SparkFiles
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+m
+org.apache.spark.SparkFiles
+getRootDirectory
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ym
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+z:org.apache.spark.SparkFiles
+getRootDirectory
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ysC:\\Users\\armando\\AppData\\Local\\Temp\\spark-11aa0884-95cb-43ea-ac28-3c13ccce9a08\\userFiles-86368c0d-74c0-4b8e-9d8c-f297e56be614
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+o13
+get
+sspark.submit.pyFiles
+s
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ys
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache.spark
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache.spark.util
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache.spark.util.Utils
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ycorg.apache.spark.util.Utils
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+m
+org.apache.spark.util.Utils
+getLocalDir
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ym
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+o11
+sc
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yro16
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+o16
+conf
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yro17
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+z:org.apache.spark.util.Utils
+getLocalDir
+ro17
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ysC:\\Users\\armando\\AppData\\Local\\Temp\\spark-11aa0884-95cb-43ea-ac28-3c13ccce9a08
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache.spark
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache.spark.util
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !yp
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+u
+org.apache.spark.util.Utils
+rj
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ycorg.apache.spark.util.Utils
+09/11/2023 01:26:40 PM:DEBUG:Command to send: r
+m
+org.apache.spark.util.Utils
+createTempDir
+e
+
+09/11/2023 01:26:40 PM:DEBUG:Answer received: !ym
+09/11/2023 01:26:40 PM:DEBUG:Command to send: c
+z:org.apache.spark.util.Utils
+createTempDir
+sC:\\Users\\armando\\AppData\\Local\\Temp\\spark-11aa0884-95cb-43ea-ac28-3c13ccce9a08
+spyspark
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yro18
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+o18
+getAbsolutePath
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !ysC:\\Users\\armando\\AppData\\Local\\Temp\\spark-11aa0884-95cb-43ea-ac28-3c13ccce9a08\\pyspark-ce047628-d9ea-4ec5-af90-d515371ca2e5
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+o13
+get
+sspark.python.profile
+sfalse
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !ysfalse
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+o13
+set
+sspark.master
+slocal
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yro19
+09/11/2023 01:26:46 PM:DEBUG:Command to send: m
+d
+o19
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+o13
+set
+sspark.app.name
+sCreate File
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yro20
+09/11/2023 01:26:46 PM:DEBUG:Command to send: m
+d
+o20
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:46 PM:DEBUG:Command to send: r
+u
+SparkSession
+rj
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.SparkSession
+09/11/2023 01:26:46 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.SparkSession
+getDefaultSession
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !ym
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.SparkSession
+getDefaultSession
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yro21
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+o21
+isDefined
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !ybfalse
+09/11/2023 01:26:46 PM:DEBUG:Command to send: r
+u
+SparkSession
+rj
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.SparkSession
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+o11
+sc
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yro22
+09/11/2023 01:26:46 PM:DEBUG:Command to send: i
+org.apache.spark.sql.SparkSession
+ro22
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yro23
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+o23
+sqlContext
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yro24
+09/11/2023 01:26:46 PM:DEBUG:Command to send: r
+u
+SparkSession
+rj
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.SparkSession
+09/11/2023 01:26:46 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.SparkSession
+setDefaultSession
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !ym
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.SparkSession
+setDefaultSession
+ro23
+e
+
+09/11/2023 01:26:46 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:46 PM:DEBUG:Command to send: c
+o23
+sessionState
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro25
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o25
+conf
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro26
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o26
+setConfString
+sspark.master
+slocal
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o23
+sessionState
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro27
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o27
+conf
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro28
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o28
+setConfString
+sspark.app.name
+sCreate File
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o13
+set
+sspark.master
+slocal
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro29
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o29
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o13
+set
+sspark.app.name
+sCreate File
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro30
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o30
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o11
+sc
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro31
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o31
+defaultParallelism
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yi1
+09/11/2023 01:26:47 PM:DEBUG:Command to send: r
+u
+PythonRDD
+rj
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonRDD
+09/11/2023 01:26:47 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.PythonRDD
+readRDDFromFile
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ym
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.PythonRDD
+readRDDFromFile
+ro11
+sC:\\Users\\armando\\AppData\\Local\\Temp\\spark-11aa0884-95cb-43ea-ac28-3c13ccce9a08\\pyspark-ce047628-d9ea-4ec5-af90-d515371ca2e5\\tmp4e80erlf
+i1
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro32
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o32
+id
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yi0
+09/11/2023 01:26:47 PM:DEBUG:Command to send: r
+u
+SerDeUtil
+rj
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.SerDeUtil
+09/11/2023 01:26:47 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.SerDeUtil
+toJavaArray
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ym
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o32
+rdd
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro33
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o33
+isBarrier
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ybfalse
+09/11/2023 01:26:47 PM:DEBUG:Command to send: r
+u
+SerDeUtil
+rj
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.SerDeUtil
+09/11/2023 01:26:47 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.SerDeUtil
+pythonToJava
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ym
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o0
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o6
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o7
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o8
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o9
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o10
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o12
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o15
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o16
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o17
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o18
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o21
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o22
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o25
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o26
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o27
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o28
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o31
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o33
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: r
+u
+PythonFunction
+rj
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonFunction
+09/11/2023 01:26:47 PM:DEBUG:Command to send: i
+java.util.HashMap
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yao34
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o34
+put
+sPYTHONHASHSEED
+s0
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yn
+09/11/2023 01:26:47 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ylo35
+09/11/2023 01:26:47 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ylo36
+09/11/2023 01:26:47 PM:DEBUG:Command to send: i
+org.apache.spark.api.python.PythonFunction
+jgAIoY3B5c3BhcmsuY2xvdWRwaWNrbGUKX2ZpbGxfZnVuY3Rpb24KcQAoY3B5c3BhcmsuY2xvdWRwaWNrbGUKX21ha2Vfc2tlbF9mdW5jCnEBY3B5c3BhcmsuY2xvdWRwaWNrbGUKX2J1aWx0aW5fdHlwZQpxAlgIAAAAQ29kZVR5cGVxA4VxBFJxBShLAksASwJLA0sTY19jb2RlY3MKZW5jb2RlCnEGWBEAAAB0AHQBwogAwoMBfAHCgwJTAHEHWAYAAABsYXRpbjFxCIZxCVJxCk6FcQtYAwAAAG1hcHEMWBUAAABmYWlsX29uX3N0b3BpdGVyYXRpb25xDYZxDlgBAAAAX3EPWAgAAABpdGVyYXRvcnEQhnERWC4AAABDOlxzcGFya1xweXRob25cbGliXHB5c3BhcmsuemlwXHB5c3BhcmtccmRkLnB5cRJYBAAAAGZ1bmNxE01DAWgGWAIAAAAAAXEUaAiGcRVScRZYAQAAAGZxF4VxGCl0cRlScRpLAX1xG4dxHFJxHX1xHihYBwAAAGdsb2JhbHNxH31xIGgNY3B5c3BhcmsudXRpbApmYWlsX29uX3N0b3BpdGVyYXRpb24KcSFzWAgAAABkZWZhdWx0c3EiTlgEAAAAZGljdHEjfXEkWAYAAABtb2R1bGVxJVgLAAAAcHlzcGFyay5yZGRxJlgOAAAAY2xvc3VyZV92YWx1ZXNxJ11xKGgAKGgBaAUoSwFLAEsBSwFLU2gGWAQAAAB8AFMAcSloCIZxKlJxK06FcSwpWAEAAAB4cS2FcS5oElgIAAAAPGxhbWJkYT5xL01SAmNfX2J1aWx0aW5fXwpieXRlcwpxMClScTEpKXRxMlJxM0r/////aBuHcTRScTV9cTYoaB99cTdoIk5oI31xOGglaCZoJ05YCAAAAHF1YWxuYW1lcTlYIgAAAFJERC5fcmVzZXJpYWxpemUuPGxvY2Fscz4uPGxhbWJkYT5xOnV0UmFoOVgVAAAAUkRELm1hcC48bG9jYWxzPi5mdW5jcTt1dFJOY3B5c3Bhcmsuc2VyaWFsaXplcnMKQmF0Y2hlZFNlcmlhbGl6ZXIKcTwpgXE9fXE+KFgKAAAAc2VyaWFsaXplcnE/Y3B5c3Bhcmsuc2VyaWFsaXplcnMKUGlja2xlU2VyaWFsaXplcgpxQCmBcUF9cUJYEwAAAF9vbmx5X3dyaXRlX3N0cmluZ3NxQ4lzYlgJAAAAYmF0Y2hTaXplcURLBnViY3B5c3Bhcmsuc2VyaWFsaXplcnMKQXV0b0JhdGNoZWRTZXJpYWxpemVyCnFFKYFxRn1xRyhoP2hAKYFxSH1xSWhDiXNiaERLAFgIAAAAYmVzdFNpemVxSkoAAAEAdWJ0cUsu
+ro34
+ro35
+spython
+s3.7
+ro36
+ro14
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro37
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o34
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o35
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: m
+d
+o36
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:26:47 PM:DEBUG:Command to send: r
+u
+PythonRDD
+rj
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonRDD
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o32
+rdd
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro38
+09/11/2023 01:26:47 PM:DEBUG:Command to send: i
+org.apache.spark.api.python.PythonRDD
+ro38
+ro37
+bTrue
+bFalse
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro39
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+o39
+asJavaRDD
+e
+
+09/11/2023 01:26:47 PM:DEBUG:Answer received: !yro40
+09/11/2023 01:26:47 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.SerDeUtil
+pythonToJava
+ro40
+bTrue
+e
+
+09/11/2023 01:26:48 PM:DEBUG:Answer received: !yro41
+09/11/2023 01:26:48 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.SerDeUtil
+toJavaArray
+ro41
+e
+
+09/11/2023 01:26:48 PM:DEBUG:Answer received: !yro42
+09/11/2023 01:26:48 PM:DEBUG:Command to send: c
+o42
+rdd
+e
+
+09/11/2023 01:26:48 PM:DEBUG:Answer received: !yro43
+09/11/2023 01:26:48 PM:DEBUG:Command to send: c
+o23
+applySchemaToPythonRDD
+ro43
+s{"fields":[{"metadata":{},"name":"id_tarifa","nullable":true,"type":"long"},{"metadata":{},"name":"tarifa","nullable":true,"type":"string"}],"type":"struct"}
+e
+
+09/11/2023 01:26:50 PM:DEBUG:Answer received: !yro44
+09/11/2023 01:26:50 PM:DEBUG:Command to send: c
+o44
+showString
+i2
+i20
+bFalse
+e
+
+09/11/2023 01:26:53 PM:DEBUG:Answer received: !ys+---------+-------------+\n|id_tarifa|       tarifa|\n+---------+-------------+\n|        1|Standard rate|\n|        2|          JFK|\n+---------+-------------+\nonly showing top 2 rows\n
+09/11/2023 01:26:53 PM:DEBUG:Command to send: c
+o44
+write
+e
+
+09/11/2023 01:26:53 PM:DEBUG:Answer received: !yro45
+09/11/2023 01:26:53 PM:DEBUG:Command to send: c
+o45
+mode
+sappend
+e
+
+09/11/2023 01:26:53 PM:DEBUG:Answer received: !yro46
+09/11/2023 01:26:53 PM:DEBUG:Command to send: c
+o46
+option
+sdelimiter
+s,
+e
+
+09/11/2023 01:26:53 PM:DEBUG:Answer received: !yro47
+09/11/2023 01:26:53 PM:DEBUG:Command to send: c
+o47
+csv
+s../temp/
+e
+
+09/11/2023 01:26:56 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o11
+sc
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro48
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o48
+defaultParallelism
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yi1
+09/11/2023 01:27:01 PM:DEBUG:Command to send: r
+u
+PythonRDD
+rj
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonRDD
+09/11/2023 01:27:01 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.PythonRDD
+readRDDFromFile
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.PythonRDD
+readRDDFromFile
+ro11
+sC:\\Users\\armando\\AppData\\Local\\Temp\\spark-11aa0884-95cb-43ea-ac28-3c13ccce9a08\\pyspark-ce047628-d9ea-4ec5-af90-d515371ca2e5\\tmp8d4zr6ob
+i1
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro49
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o49
+id
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yi11
+09/11/2023 01:27:01 PM:DEBUG:Command to send: r
+u
+SerDeUtil
+rj
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.SerDeUtil
+09/11/2023 01:27:01 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.SerDeUtil
+toJavaArray
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o49
+rdd
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro50
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o50
+isBarrier
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ybfalse
+09/11/2023 01:27:01 PM:DEBUG:Command to send: r
+u
+SerDeUtil
+rj
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.SerDeUtil
+09/11/2023 01:27:01 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.SerDeUtil
+pythonToJava
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:01 PM:DEBUG:Command to send: r
+u
+PythonFunction
+rj
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonFunction
+09/11/2023 01:27:01 PM:DEBUG:Command to send: i
+java.util.HashMap
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yao51
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o51
+put
+sPYTHONHASHSEED
+s0
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yn
+09/11/2023 01:27:01 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ylo52
+09/11/2023 01:27:01 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ylo53
+09/11/2023 01:27:01 PM:DEBUG:Command to send: i
+org.apache.spark.api.python.PythonFunction
+jgAIoY3B5c3BhcmsuY2xvdWRwaWNrbGUKX2ZpbGxfZnVuY3Rpb24KcQAoY3B5c3BhcmsuY2xvdWRwaWNrbGUKX21ha2Vfc2tlbF9mdW5jCnEBY3B5c3BhcmsuY2xvdWRwaWNrbGUKX2J1aWx0aW5fdHlwZQpxAlgIAAAAQ29kZVR5cGVxA4VxBFJxBShLAksASwJLA0sTY19jb2RlY3MKZW5jb2RlCnEGWBEAAAB0AHQBwogAwoMBfAHCgwJTAHEHWAYAAABsYXRpbjFxCIZxCVJxCk6FcQtYAwAAAG1hcHEMWBUAAABmYWlsX29uX3N0b3BpdGVyYXRpb25xDYZxDlgBAAAAX3EPWAgAAABpdGVyYXRvcnEQhnERWC4AAABDOlxzcGFya1xweXRob25cbGliXHB5c3BhcmsuemlwXHB5c3BhcmtccmRkLnB5cRJYBAAAAGZ1bmNxE01DAWgGWAIAAAAAAXEUaAiGcRVScRZYAQAAAGZxF4VxGCl0cRlScRpLAX1xG4dxHFJxHX1xHihYBwAAAGdsb2JhbHNxH31xIGgNY3B5c3BhcmsudXRpbApmYWlsX29uX3N0b3BpdGVyYXRpb24KcSFzWAgAAABkZWZhdWx0c3EiTlgEAAAAZGljdHEjfXEkWAYAAABtb2R1bGVxJVgLAAAAcHlzcGFyay5yZGRxJlgOAAAAY2xvc3VyZV92YWx1ZXNxJ11xKGgAKGgBaAUoSwFLAEsBSwFLU2gGWAQAAAB8AFMAcSloCIZxKlJxK06FcSwpWAEAAAB4cS2FcS5oElgIAAAAPGxhbWJkYT5xL01SAmNfX2J1aWx0aW5fXwpieXRlcwpxMClScTEpKXRxMlJxM0r/////aBuHcTRScTV9cTYoaB99cTdoIk5oI31xOGglaCZoJ05YCAAAAHF1YWxuYW1lcTlYIgAAAFJERC5fcmVzZXJpYWxpemUuPGxvY2Fscz4uPGxhbWJkYT5xOnV0UmFoOVgVAAAAUkRELm1hcC48bG9jYWxzPi5mdW5jcTt1dFJOY3B5c3Bhcmsuc2VyaWFsaXplcnMKQmF0Y2hlZFNlcmlhbGl6ZXIKcTwpgXE9fXE+KFgKAAAAc2VyaWFsaXplcnE/Y3B5c3Bhcmsuc2VyaWFsaXplcnMKUGlja2xlU2VyaWFsaXplcgpxQCmBcUF9cUJYEwAAAF9vbmx5X3dyaXRlX3N0cmluZ3NxQ4lzYlgJAAAAYmF0Y2hTaXplcURLBnViY3B5c3Bhcmsuc2VyaWFsaXplcnMKQXV0b0JhdGNoZWRTZXJpYWxpemVyCnFFKYFxRn1xRyhoP2hAKYFxSH1xSWhDiXNiaERLAFgIAAAAYmVzdFNpemVxSkoAAAEAdWJ0cUsu
+ro51
+ro52
+spython
+s3.7
+ro53
+ro14
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro54
+09/11/2023 01:27:01 PM:DEBUG:Command to send: m
+d
+o51
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:01 PM:DEBUG:Command to send: m
+d
+o52
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:01 PM:DEBUG:Command to send: m
+d
+o53
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:01 PM:DEBUG:Command to send: r
+u
+PythonRDD
+rj
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonRDD
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o49
+rdd
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro55
+09/11/2023 01:27:01 PM:DEBUG:Command to send: i
+org.apache.spark.api.python.PythonRDD
+ro55
+ro54
+bTrue
+bFalse
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro56
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o56
+asJavaRDD
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro57
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.SerDeUtil
+pythonToJava
+ro57
+bTrue
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro58
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.SerDeUtil
+toJavaArray
+ro58
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro59
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o59
+rdd
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro60
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o23
+applySchemaToPythonRDD
+ro60
+s{"fields":[{"metadata":{},"name":"id_tipo_pago","nullable":true,"type":"long"},{"metadata":{},"name":"tipo_pago","nullable":true,"type":"string"}],"type":"struct"}
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro61
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o61
+write
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro62
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o62
+mode
+sappend
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro63
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o63
+option
+sdelimiter
+s,
+e
+
+09/11/2023 01:27:01 PM:DEBUG:Answer received: !yro64
+09/11/2023 01:27:01 PM:DEBUG:Command to send: c
+o64
+csv
+s../temp/
+e
+
+09/11/2023 01:27:02 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:02 PM:DEBUG:Command to send: c
+o61
+showString
+i2
+i20
+bFalse
+e
+
+09/11/2023 01:27:03 PM:DEBUG:Answer received: !ys+------------+-----------+\n|id_tipo_pago|  tipo_pago|\n+------------+-----------+\n|           1|Credit card|\n|           2|       Cash|\n+------------+-----------+\nonly showing top 2 rows\n
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o11
+sc
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro65
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o65
+defaultParallelism
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yi1
+09/11/2023 01:27:08 PM:DEBUG:Command to send: r
+u
+PythonRDD
+rj
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonRDD
+09/11/2023 01:27:08 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.PythonRDD
+readRDDFromFile
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.PythonRDD
+readRDDFromFile
+ro11
+sC:\\Users\\armando\\AppData\\Local\\Temp\\spark-11aa0884-95cb-43ea-ac28-3c13ccce9a08\\pyspark-ce047628-d9ea-4ec5-af90-d515371ca2e5\\tmpr2wwv8gm
+i1
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro66
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o66
+id
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yi22
+09/11/2023 01:27:08 PM:DEBUG:Command to send: r
+u
+SerDeUtil
+rj
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.SerDeUtil
+09/11/2023 01:27:08 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.SerDeUtil
+toJavaArray
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o66
+rdd
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro67
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o67
+isBarrier
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ybfalse
+09/11/2023 01:27:08 PM:DEBUG:Command to send: r
+u
+SerDeUtil
+rj
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.SerDeUtil
+09/11/2023 01:27:08 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.SerDeUtil
+pythonToJava
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:08 PM:DEBUG:Command to send: r
+u
+PythonFunction
+rj
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonFunction
+09/11/2023 01:27:08 PM:DEBUG:Command to send: i
+java.util.HashMap
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yao68
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o68
+put
+sPYTHONHASHSEED
+s0
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yn
+09/11/2023 01:27:08 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ylo69
+09/11/2023 01:27:08 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ylo70
+09/11/2023 01:27:08 PM:DEBUG:Command to send: i
+org.apache.spark.api.python.PythonFunction
+jgAIoY3B5c3BhcmsuY2xvdWRwaWNrbGUKX2ZpbGxfZnVuY3Rpb24KcQAoY3B5c3BhcmsuY2xvdWRwaWNrbGUKX21ha2Vfc2tlbF9mdW5jCnEBY3B5c3BhcmsuY2xvdWRwaWNrbGUKX2J1aWx0aW5fdHlwZQpxAlgIAAAAQ29kZVR5cGVxA4VxBFJxBShLAksASwJLA0sTY19jb2RlY3MKZW5jb2RlCnEGWBEAAAB0AHQBwogAwoMBfAHCgwJTAHEHWAYAAABsYXRpbjFxCIZxCVJxCk6FcQtYAwAAAG1hcHEMWBUAAABmYWlsX29uX3N0b3BpdGVyYXRpb25xDYZxDlgBAAAAX3EPWAgAAABpdGVyYXRvcnEQhnERWC4AAABDOlxzcGFya1xweXRob25cbGliXHB5c3BhcmsuemlwXHB5c3BhcmtccmRkLnB5cRJYBAAAAGZ1bmNxE01DAWgGWAIAAAAAAXEUaAiGcRVScRZYAQAAAGZxF4VxGCl0cRlScRpLAX1xG4dxHFJxHX1xHihYBwAAAGdsb2JhbHNxH31xIGgNY3B5c3BhcmsudXRpbApmYWlsX29uX3N0b3BpdGVyYXRpb24KcSFzWAgAAABkZWZhdWx0c3EiTlgEAAAAZGljdHEjfXEkWAYAAABtb2R1bGVxJVgLAAAAcHlzcGFyay5yZGRxJlgOAAAAY2xvc3VyZV92YWx1ZXNxJ11xKGgAKGgBaAUoSwFLAEsBSwFLU2gGWAQAAAB8AFMAcSloCIZxKlJxK06FcSwpWAEAAAB4cS2FcS5oElgIAAAAPGxhbWJkYT5xL01SAmNfX2J1aWx0aW5fXwpieXRlcwpxMClScTEpKXRxMlJxM0r/////aBuHcTRScTV9cTYoaB99cTdoIk5oI31xOGglaCZoJ05YCAAAAHF1YWxuYW1lcTlYIgAAAFJERC5fcmVzZXJpYWxpemUuPGxvY2Fscz4uPGxhbWJkYT5xOnV0UmFoOVgVAAAAUkRELm1hcC48bG9jYWxzPi5mdW5jcTt1dFJOY3B5c3Bhcmsuc2VyaWFsaXplcnMKQmF0Y2hlZFNlcmlhbGl6ZXIKcTwpgXE9fXE+KFgKAAAAc2VyaWFsaXplcnE/Y3B5c3Bhcmsuc2VyaWFsaXplcnMKUGlja2xlU2VyaWFsaXplcgpxQCmBcUF9cUJYEwAAAF9vbmx5X3dyaXRlX3N0cmluZ3NxQ4lzYlgJAAAAYmF0Y2hTaXplcURLAnViY3B5c3Bhcmsuc2VyaWFsaXplcnMKQXV0b0JhdGNoZWRTZXJpYWxpemVyCnFFKYFxRn1xRyhoP2hAKYFxSH1xSWhDiXNiaERLAFgIAAAAYmVzdFNpemVxSkoAAAEAdWJ0cUsu
+ro68
+ro69
+spython
+s3.7
+ro70
+ro14
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro71
+09/11/2023 01:27:08 PM:DEBUG:Command to send: m
+d
+o68
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:08 PM:DEBUG:Command to send: m
+d
+o69
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:08 PM:DEBUG:Command to send: m
+d
+o70
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:08 PM:DEBUG:Command to send: r
+u
+PythonRDD
+rj
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonRDD
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o66
+rdd
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro72
+09/11/2023 01:27:08 PM:DEBUG:Command to send: i
+org.apache.spark.api.python.PythonRDD
+ro72
+ro71
+bTrue
+bFalse
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro73
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o73
+asJavaRDD
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro74
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.SerDeUtil
+pythonToJava
+ro74
+bTrue
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro75
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.SerDeUtil
+toJavaArray
+ro75
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro76
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o76
+rdd
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro77
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o23
+applySchemaToPythonRDD
+ro77
+s{"fields":[{"metadata":{},"name":"id_proveedor","nullable":true,"type":"long"},{"metadata":{},"name":"proveedor","nullable":true,"type":"string"}],"type":"struct"}
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro78
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o78
+write
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro79
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o79
+mode
+sappend
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro80
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o80
+option
+sdelimiter
+s,
+e
+
+09/11/2023 01:27:08 PM:DEBUG:Answer received: !yro81
+09/11/2023 01:27:08 PM:DEBUG:Command to send: c
+o81
+csv
+s../temp/
+e
+
+09/11/2023 01:27:09 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:09 PM:DEBUG:Command to send: c
+o78
+showString
+i2
+i20
+bFalse
+e
+
+09/11/2023 01:27:10 PM:DEBUG:Answer received: !ys+------------+---------+\n|id_proveedor|proveedor|\n+------------+---------+\n|           1|   Normal|\n|           2|    Black|\n+------------+---------+\n
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o24
+read
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro82
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o23
+sessionState
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro83
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o83
+conf
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro84
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o84
+setConfString
+sspark.master
+slocal
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o23
+sessionState
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro85
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o85
+conf
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro86
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o86
+setConfString
+sspark.app.name
+sCreate File
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o13
+set
+sspark.master
+slocal
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro87
+09/11/2023 01:27:15 PM:DEBUG:Command to send: m
+d
+o87
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o13
+set
+sspark.app.name
+sCreate File
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro88
+09/11/2023 01:27:15 PM:DEBUG:Command to send: m
+d
+o88
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o23
+parseDataType
+s{"fields":[{"metadata":{},"name":"ID_PROVEEDOR","nullable":true,"type":"integer"},{"metadata":{},"name":"FCH_HRA_RECOGIDA","nullable":true,"type":"string"},{"metadata":{},"name":"FCH_HRA_DESCENSO","nullable":true,"type":"string"},{"metadata":{},"name":"NUM_PASAJEROS","nullable":true,"type":"integer"},{"metadata":{},"name":"DISTANCIA_VIAJE","nullable":true,"type":"double"},{"metadata":{},"name":"LONGITUD_RECOGIDA","nullable":true,"type":"double"},{"metadata":{},"name":"LATITUD_RECOGIDA","nullable":true,"type":"double"},{"metadata":{},"name":"ID_TARIFA","nullable":true,"type":"integer"},{"metadata":{},"name":"FLG_TIENDA_AVANCE","nullable":true,"type":"string"},{"metadata":{},"name":"LONGITUD_DESCENSO","nullable":true,"type":"double"},{"metadata":{},"name":"LATITUD_DESCENSO","nullable":true,"type":"double"},{"metadata":{},"name":"ID_TIPO_PAGO","nullable":true,"type":"integer"},{"metadata":{},"name":"MONTO_TARIFA","nullable":true,"type":"double"},{"metadata":{},"name":"EXTRA","nullable":true,"type":"double"},{"metadata":{},"name":"IMP_MTA","nullable":true,"type":"double"},{"metadata":{},"name":"MONTO_PROPINA","nullable":true,"type":"double"},{"metadata":{},"name":"MONTO_PEAJE","nullable":true,"type":"double"},{"metadata":{},"name":"RECARGO_MEJORA","nullable":true,"type":"double"},{"metadata":{},"name":"MONTO_TOTAL","nullable":true,"type":"double"}],"type":"struct"}
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro89
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o82
+schema
+ro89
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro90
+09/11/2023 01:27:15 PM:DEBUG:Command to send: r
+u
+PythonUtils
+rj
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonUtils
+09/11/2023 01:27:15 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:15 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ylo91
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o91
+add
+s../output/uber_data_20230911.csv
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro91
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro92
+09/11/2023 01:27:15 PM:DEBUG:Command to send: m
+d
+o91
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o90
+csv
+ro92
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro93
+09/11/2023 01:27:15 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:15 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sLATITUD_DESCENSO
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro94
+09/11/2023 01:27:15 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:15 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sLONGITUD_DESCENSO
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro95
+09/11/2023 01:27:15 PM:DEBUG:Command to send: r
+u
+PythonUtils
+rj
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonUtils
+09/11/2023 01:27:15 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:15 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ylo96
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o96
+add
+ro94
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o96
+add
+ro95
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro96
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro97
+09/11/2023 01:27:15 PM:DEBUG:Command to send: m
+d
+o96
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:15 PM:DEBUG:Command to send: c
+o93
+select
+ro97
+e
+
+09/11/2023 01:27:15 PM:DEBUG:Answer received: !yro98
+09/11/2023 01:27:20 PM:DEBUG:Command to send: c
+o98
+write
+e
+
+09/11/2023 01:27:20 PM:DEBUG:Answer received: !yro99
+09/11/2023 01:27:20 PM:DEBUG:Command to send: c
+o99
+mode
+sappend
+e
+
+09/11/2023 01:27:20 PM:DEBUG:Answer received: !yro100
+09/11/2023 01:27:20 PM:DEBUG:Command to send: c
+o100
+option
+sdelimiter
+s,
+e
+
+09/11/2023 01:27:20 PM:DEBUG:Answer received: !yro101
+09/11/2023 01:27:20 PM:DEBUG:Command to send: c
+o101
+csv
+s../temp/
+e
+
+09/11/2023 01:27:22 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:22 PM:DEBUG:Command to send: c
+o98
+showString
+i2
+i20
+bFalse
+e
+
+09/11/2023 01:27:23 PM:DEBUG:Answer received: !ys+----------------+-----------------+\n|LATITUD_DESCENSO|LONGITUD_DESCENSO|\n+----------------+-----------------+\n|     40.74612808|     -74.00426483|\n|     40.73316574|      -74.0059433|\n+----------------+-----------------+\nonly showing top 2 rows\n
+09/11/2023 01:27:28 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:28 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:28 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sLATITUD_RECOGIDA
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yro102
+09/11/2023 01:27:28 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:28 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o37
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o38
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o39
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o40
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o41
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o42
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o43
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o45
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o46
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o47
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o48
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o49
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o50
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o54
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o55
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o56
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o57
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o58
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o59
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o60
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o62
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o63
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o64
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o65
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o66
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o67
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o71
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o72
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o73
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o74
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o75
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o76
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o77
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o79
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o80
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o81
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o82
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o83
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o84
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o85
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o86
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o89
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o90
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o92
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o94
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o95
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o97
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o99
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o100
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o101
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sLONGITUD_RECOGIDA
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yro103
+09/11/2023 01:27:28 PM:DEBUG:Command to send: r
+u
+PythonUtils
+rj
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonUtils
+09/11/2023 01:27:28 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:28 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !ylo104
+09/11/2023 01:27:28 PM:DEBUG:Command to send: c
+o104
+add
+ro102
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:28 PM:DEBUG:Command to send: c
+o104
+add
+ro103
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:28 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro104
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yro105
+09/11/2023 01:27:28 PM:DEBUG:Command to send: m
+d
+o104
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:28 PM:DEBUG:Command to send: c
+o93
+select
+ro105
+e
+
+09/11/2023 01:27:28 PM:DEBUG:Answer received: !yro106
+09/11/2023 01:27:33 PM:DEBUG:Command to send: c
+o106
+write
+e
+
+09/11/2023 01:27:33 PM:DEBUG:Answer received: !yro107
+09/11/2023 01:27:33 PM:DEBUG:Command to send: c
+o107
+mode
+sappend
+e
+
+09/11/2023 01:27:33 PM:DEBUG:Answer received: !yro108
+09/11/2023 01:27:33 PM:DEBUG:Command to send: c
+o108
+option
+sdelimiter
+s,
+e
+
+09/11/2023 01:27:33 PM:DEBUG:Answer received: !yro109
+09/11/2023 01:27:33 PM:DEBUG:Command to send: c
+o109
+csv
+s../temp/
+e
+
+09/11/2023 01:27:35 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:35 PM:DEBUG:Command to send: c
+o106
+showString
+i2
+i20
+bFalse
+e
+
+09/11/2023 01:27:35 PM:DEBUG:Answer received: !ys+----------------+-----------------+\n|LATITUD_RECOGIDA|LONGITUD_RECOGIDA|\n+----------------+-----------------+\n|     40.76515198|     -73.97674561|\n|     40.76792526|     -73.98348236|\n+----------------+-----------------+\nonly showing top 2 rows\n
+09/11/2023 01:27:40 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:40 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:40 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sFCH_HRA_RECOGIDA
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !yro110
+09/11/2023 01:27:40 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:40 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:40 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sFCH_HRA_DESCENSO
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !yro111
+09/11/2023 01:27:40 PM:DEBUG:Command to send: r
+u
+PythonUtils
+rj
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonUtils
+09/11/2023 01:27:40 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:40 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !ylo112
+09/11/2023 01:27:40 PM:DEBUG:Command to send: c
+o112
+add
+ro110
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:40 PM:DEBUG:Command to send: c
+o112
+add
+ro111
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:40 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro112
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !yro113
+09/11/2023 01:27:40 PM:DEBUG:Command to send: m
+d
+o112
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:40 PM:DEBUG:Command to send: c
+o93
+select
+ro113
+e
+
+09/11/2023 01:27:40 PM:DEBUG:Answer received: !yro114
+09/11/2023 01:27:45 PM:DEBUG:Command to send: c
+o114
+write
+e
+
+09/11/2023 01:27:45 PM:DEBUG:Answer received: !yro115
+09/11/2023 01:27:45 PM:DEBUG:Command to send: c
+o115
+mode
+sappend
+e
+
+09/11/2023 01:27:45 PM:DEBUG:Answer received: !yro116
+09/11/2023 01:27:45 PM:DEBUG:Command to send: c
+o116
+option
+sdelimiter
+s,
+e
+
+09/11/2023 01:27:45 PM:DEBUG:Answer received: !yro117
+09/11/2023 01:27:45 PM:DEBUG:Command to send: c
+o117
+csv
+s../temp/
+e
+
+09/11/2023 01:27:47 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:47 PM:DEBUG:Command to send: c
+o114
+showString
+i2
+i20
+bFalse
+e
+
+09/11/2023 01:27:47 PM:DEBUG:Answer received: !ys+-------------------+-------------------+\n|   FCH_HRA_RECOGIDA|   FCH_HRA_DESCENSO|\n+-------------------+-------------------+\n|2016-03-01 00:00:00|2016-03-01 00:07:55|\n|2016-03-01 00:00:00|2016-03-01 00:11:06|\n+-------------------+-------------------+\nonly showing top 2 rows\n
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sID_PROVEEDOR
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro118
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sFCH_HRA_RECOGIDA
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro119
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sFCH_HRA_DESCENSO
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro120
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sID_TARIFA
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro121
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sLATITUD_RECOGIDA
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro122
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sLONGITUD_RECOGIDA
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro123
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sLATITUD_DESCENSO
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro124
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sLONGITUD_DESCENSO
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro125
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sID_TIPO_PAGO
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro126
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sNUM_PASAJEROS
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro127
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sDISTANCIA_VIAJE
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro128
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sFLG_TIENDA_AVANCE
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro129
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMONTO_TARIFA
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro130
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sEXTRA
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro131
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sIMP_MTA
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro132
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMONTO_PROPINA
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro133
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMONTO_PEAJE
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro134
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sRECARGO_MEJORA
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro135
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+functions
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.functions
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.functions
+col
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.functions
+col
+sMONTO_TOTAL
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro136
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+u
+PythonUtils
+rj
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ycorg.apache.spark.api.python.PythonUtils
+09/11/2023 01:27:52 PM:DEBUG:Command to send: r
+m
+org.apache.spark.api.python.PythonUtils
+toSeq
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ym
+09/11/2023 01:27:52 PM:DEBUG:Command to send: i
+java.util.ArrayList
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ylo137
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro118
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro119
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro120
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro121
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro122
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro123
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro124
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro125
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro126
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro127
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro128
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro129
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro130
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro131
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro132
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro133
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro134
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro135
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o137
+add
+ro136
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !ybtrue
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+z:org.apache.spark.api.python.PythonUtils
+toSeq
+ro137
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro138
+09/11/2023 01:27:52 PM:DEBUG:Command to send: m
+d
+o137
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yv
+09/11/2023 01:27:52 PM:DEBUG:Command to send: c
+o93
+select
+ro138
+e
+
+09/11/2023 01:27:52 PM:DEBUG:Answer received: !yro139
+09/11/2023 01:27:57 PM:DEBUG:Command to send: c
+o139
+write
+e
+
+09/11/2023 01:27:57 PM:DEBUG:Answer received: !yro140
+09/11/2023 01:27:57 PM:DEBUG:Command to send: c
+o140
+mode
+sappend
+e
+
+09/11/2023 01:27:57 PM:DEBUG:Answer received: !yro141
+09/11/2023 01:27:57 PM:DEBUG:Command to send: c
+o141
+option
+sdelimiter
+s,
+e
+
+09/11/2023 01:27:57 PM:DEBUG:Answer received: !yro142
+09/11/2023 01:27:57 PM:DEBUG:Command to send: c
+o142
+csv
+s../temp/
+e
+
+09/11/2023 01:28:01 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:01 PM:DEBUG:Command to send: c
+o139
+showString
+i2
+i20
+bFalse
+e
+
+09/11/2023 01:28:02 PM:DEBUG:Answer received: !ys+------------+-------------------+-------------------+---------+----------------+-----------------+----------------+-----------------+------------+-------------+---------------+-----------------+------------+-----+-------+-------------+-----------+--------------+-----------+\n|ID_PROVEEDOR|   FCH_HRA_RECOGIDA|   FCH_HRA_DESCENSO|ID_TARIFA|LATITUD_RECOGIDA|LONGITUD_RECOGIDA|LATITUD_DESCENSO|LONGITUD_DESCENSO|ID_TIPO_PAGO|NUM_PASAJEROS|DISTANCIA_VIAJE|FLG_TIENDA_AVANCE|MONTO_TARIFA|EXTRA|IMP_MTA|MONTO_PROPINA|MONTO_PEAJE|RECARGO_MEJORA|MONTO_TOTAL|\n+------------+-------------------+-------------------+---------+----------------+-----------------+----------------+-----------------+------------+-------------+---------------+-----------------+------------+-----+-------+-------------+-----------+--------------+-----------+\n|           1|2016-03-01 00:00:00|2016-03-01 00:07:55|        1|     40.76515198|     -73.97674561|     40.74612808|     -74.00426483|           1|            1|            2.5|                N|         9.0|  0.5|    0.5|         2.05|        0.0|           0.3|      12.35|\n|           1|2016-03-01 00:00:00|2016-03-01 00:11:06|        1|     40.76792526|     -73.98348236|     40.73316574|      -74.0059433|           1|            1|            2.9|                N|        11.0|  0.5|    0.5|         3.05|        0.0|           0.3|      15.35|\n+------------+-------------------+-------------------+---------+----------------+-----------------+----------------+-----------------+------------+-------------+---------------+-----------------+------------+-----+-------+-------------+-----------+--------------+-----------+\nonly showing top 2 rows\n
+09/11/2023 01:28:12 PM:DEBUG:Command to send: c
+o11
+stop
+e
+
+09/11/2023 01:28:12 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: r
+u
+SparkSession
+rj
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !ycorg.apache.spark.sql.SparkSession
+09/11/2023 01:28:13 PM:DEBUG:Command to send: r
+m
+org.apache.spark.sql.SparkSession
+clearDefaultSession
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !ym
+09/11/2023 01:28:13 PM:DEBUG:Command to send: c
+z:org.apache.spark.sql.SparkSession
+clearDefaultSession
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o103
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o105
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o107
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o108
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o109
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o110
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o111
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o113
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o115
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o116
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o117
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o118
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o119
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o120
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o121
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o122
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o123
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o124
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o125
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o126
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o127
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o128
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o129
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o130
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o131
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o132
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o133
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o134
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o135
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o136
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o138
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o140
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o141
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o142
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o32
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o102
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o44
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o61
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o78
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o93
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o98
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o106
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o114
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv
+09/11/2023 01:28:13 PM:DEBUG:Command to send: m
+d
+o139
+e
+
+09/11/2023 01:28:13 PM:DEBUG:Answer received: !yv

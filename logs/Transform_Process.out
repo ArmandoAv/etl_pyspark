@@ -3,7 +3,7 @@ The transformations are being processed...
 
 Delete files in temp path
 
-The Dataframe for cat_tarifa_yyyymmdd.csv has been created
+The Dataframe for cat_tarifa_20230909.csv has been created
 +---------+-------------+
 |id_tarifa|       tarifa|
 +---------+-------------+
@@ -14,9 +14,9 @@ only showing top 2 rows
 
 Rename the file created in the temp path...
 
-The file cat_tarifa_yyyymmdd.csv has been crated in output path with 6 records.
+The file cat_tarifa_20230909.csv has been crated in output path with 6 records.
 
-The Dataframe for cat_tipo_pago_yyyymmdd.csv has been created
+The Dataframe for cat_tipo_pago_20230909.csv has been created
 +------------+-----------+
 |id_tipo_pago|  tipo_pago|
 +------------+-----------+
@@ -27,9 +27,9 @@ only showing top 2 rows
 
 Rename the file created in the temp path...
 
-The file cat_tipo_pago_yyyymmdd.csv has been crated in output path with 6 records.
+The file cat_tipo_pago_20230909.csv has been crated in output path with 6 records.
 
-The Dataframe for cat_proveedor_yyyymmdd.csv has been created
+The Dataframe for cat_proveedor_20230909.csv has been created
 +------------+---------+
 |id_proveedor|proveedor|
 +------------+---------+
@@ -39,11 +39,11 @@ The Dataframe for cat_proveedor_yyyymmdd.csv has been created
 
 Rename the file created in the temp path...
 
-The file cat_proveedor_yyyymmdd.csv has been crated in output path with 2 records.
+The file cat_proveedor_20230909.csv has been crated in output path with 2 records.
 
-The schema of the uber_data_yyyymmdd.csv file:
+The schema of the uber_data_20230909.csv file:
 
-The Dataframe for cat_locacion_descenso_yyyymmdd.csv has been created
+The Dataframe for cat_locacion_descenso_20230909.csv has been created
 +----------------+-----------------+
 |LATITUD_DESCENSO|LONGITUD_DESCENSO|
 +----------------+-----------------+
@@ -54,9 +54,9 @@ only showing top 2 rows
 
 Rename the file created in the temp path...
 
-The file cat_locacion_descenso_yyyymmdd.csv has been crated in output path with 99809 records.
+The file cat_locacion_descenso_20230909.csv has been crated in output path with 99809 records.
 
-The Dataframe for cat_locacion_recogida_yyyymmdd.csv has been created
+The Dataframe for cat_locacion_recogida_20230909.csv has been created
 +----------------+-----------------+
 |LATITUD_RECOGIDA|LONGITUD_RECOGIDA|
 +----------------+-----------------+
@@ -67,9 +67,9 @@ only showing top 2 rows
 
 Rename the file created in the temp path...
 
-The file cat_locacion_recogida_yyyymmdd.csv has been crated in output path with 99809 records.
+The file cat_locacion_recogida_20230909.csv has been crated in output path with 99809 records.
 
-The Dataframe for dim_fecha_yyyymmdd.csv has been created
+The Dataframe for dim_fecha_20230909.csv has been created
 +-------------------+-------------------+
 |   FCH_HRA_RECOGIDA|   FCH_HRA_DESCENSO|
 +-------------------+-------------------+
@@ -80,9 +80,9 @@ only showing top 2 rows
 
 Rename the file created in the temp path...
 
-The file dim_fecha_yyyymmdd.csv has been crated in output path with 99809 records.
+The file dim_fecha_20230909.csv has been crated in output path with 99809 records.
 
-The Dataframe for fact_pago_viaje_yyyymmdd.csv has been created
+The Dataframe for fact_pago_viaje_20230909.csv has been created
 +------------+-------------------+-------------------+---------+----------------+-----------------+----------------+-----------------+------------+-------------+---------------+-----------------+------------+-----+-------+-------------+-----------+--------------+-----------+
 |ID_PROVEEDOR|   FCH_HRA_RECOGIDA|   FCH_HRA_DESCENSO|ID_TARIFA|LATITUD_RECOGIDA|LONGITUD_RECOGIDA|LATITUD_DESCENSO|LONGITUD_DESCENSO|ID_TIPO_PAGO|NUM_PASAJEROS|DISTANCIA_VIAJE|FLG_TIENDA_AVANCE|MONTO_TARIFA|EXTRA|IMP_MTA|MONTO_PROPINA|MONTO_PEAJE|RECARGO_MEJORA|MONTO_TOTAL|
 +------------+-------------------+-------------------+---------+----------------+-----------------+----------------+-----------------+------------+-------------+---------------+-----------------+------------+-----+-------+-------------+-----------+--------------+-----------+
@@ -93,6 +93,6 @@ only showing top 2 rows
 
 Rename the file created in the temp path...
 
-The file fact_pago_viaje_yyyymmdd.csv has been crated in output path with 99809 records.
+The file fact_pago_viaje_20230909.csv has been crated in output path with 99809 records.
 
 The Transform process has finished without errors.

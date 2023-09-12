@@ -276,7 +276,7 @@ spark-submit Extract.py
 This process creates a log file in the logs path automatically, but if it is also required to obtain an out type file with the information that the console leaves, you must execute it with the following command, the file will be generated in the logs directory
 
 ```
-spark-submit Extract.py | tee ..\logs\Extract_Process_First_Execution.out
+spark-submit Extract.py | tee ..\logs\Extract_Process.out
 ```
 
 This process reads the json file from the input path and creates a csv file in the output path, which will be used to create the corresponding files to be able to load the tables created in the SQL Server.
@@ -292,7 +292,7 @@ spark-submit Transform.py
 This process creates a log file in the logs path automatically, but if it is also required to obtain an out type file with the information that the console leaves, you must execute it with the following command, the file will be generated in the logs directory
 
 ```
-spark-submit Transform.py | tee ..\logs\Transform_Process_First_Execution.out
+spark-submit Transform.py | tee ..\logs\Transform_Process.out
 ```
 
 This process creates seven files from the csv file created in the previous process in the output path, these files are the basis for loading the information in the tables created in the SQL Server.
@@ -319,7 +319,9 @@ Finally, the process deletes the created files and creates a copy of the json fi
 
 ### Considerations
 
-Add info...
+As seen so far, the process has the ability to clean up several directories upon completion of the loading process. Therefore, it is necessary to copy the Notes.txt file found in the path where the project will be to the temporary, output and bad paths when you want to upload any modifications to the GitHub repository.
+
+The use of directories and files is described in more detail in the Process_execution.docx file.
 
 ### Validation
 
@@ -328,10 +330,12 @@ At the end of executing the loading process, it is validated that the informatio
 To see more clearly how the created validations work, for information management. The process must be executed once more, since the process not finding new information, will not carry out the loads to the final tables, you must execute them with the following commands
 
 ```
-spark-submit Extract.py | tee ..\logs\Extract_Process_Second_Execution.out
-spark-submit Transform.py | tee ..\logs\Transform_Process_Second_Execution.out
+spark-submit Extract.py
+spark-submit Transform.py
 spark-submit Load.py | tee ..\logs\Load_Process_Second_Execution.out
 ```
+
+For the Load and Transform processes, it is not necessary to run the command to save the output, since it is practically the same output, it would only change the date in the name of the files, if they are executed on another day.
 
 <!-- CONTRIBUTING -->
 
