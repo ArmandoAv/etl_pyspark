@@ -1,0 +1,7 @@
+cat_tarifa_yyyymmdd.csv
+cat_tipo_pago_yyyymmdd.csv
+cat_proveedor_yyyymmdd.csv
+cat_locacion_descenso_yyyymmdd.csv
+cat_locacion_recogida_yyyymmdd.csv
+dim_fecha_yyyymmdd.csv
+fact_pago_viaje_yyyymmdd.csv

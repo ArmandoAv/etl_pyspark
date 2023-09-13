@@ -2,17 +2,19 @@
 #                                                                                 #
 # Process: ETL Project (Load)                                                     #
 # Created by: Armando Avila                                                       #
-# Purpose: Load the tables with the generated files                               #
-# Comment: Run File_Load.py file functions                                        #
+# Purpose: Loads the tables with the generated files                              #
+# Comment: Runs File_Load.py file functions                                       #
 #          loadTable()                                                            #
 #          readTables()                                                           #
 #          deleteFile()                                                           #
-#          Run File_Bad_Load file functions                                       #
+#          Runs File_Load_Bad file functions                                      #
 #          createBadFile()                                                        #
-#          Run File_Load_Log file functions                                       #
+#          Runs File_Load_Log file functions                                      #
 #          loadLogTable()                                                         #
-#          Get parameters from ETL_Param.py file                                  #
-#          Get queries from Table_Read_Load.py file                               #
+#          Runs File_Load_Clean file function                                     #
+#          cleanPaths()                                                           #
+#          Gets parameters from ETL_Param.py file                                 #
+#          Gets defined queries from Table_Load_Read.py file                      #
 # Created: 2023-08                                                                #
 # Modified:                                                                       #
 #                                                                                 #
@@ -23,9 +25,9 @@
 from aux_src.ETL_Param import *
 from aux_src.File_Load import *
 from aux_src.File_Clean import *
-from aux_src.File_Bad_Load import *
+from aux_src.File_Load_Bad import *
 from aux_src.File_Load_Log import *
-from aux_src.Table_Read_Load import *
+from aux_src.Table_Load_Read import *
 from pyspark.sql import SparkSession
 import logging
 

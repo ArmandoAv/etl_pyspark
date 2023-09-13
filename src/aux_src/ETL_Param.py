@@ -52,7 +52,7 @@ file_final_loc_recogida_name = "cat_final_loc_recogida_" + format_date + ".csv"
 file_final_fch_name = "dim_final_fecha_" + format_date + ".csv"
 file_image_pago_viaje_name =  "fact_image_pago_viaje_" + format_date + ".csv"
 file_final_pago_viaje_name =  "fact_final_pago_viaje_" + format_date + ".csv"
-file_log_carga_name = "DIM_LOG_CARGA_" + format_date + ".csv"
+file_log_carga_name = "dim_log_carga_" + format_date + ".csv"
 
 
 # Path and files names
@@ -101,26 +101,12 @@ append = "append"
 overwrite = "overwrite"
 
 
+# Database parameters
+database_name = "UBER_ANALISIS"
+schema_db = "dbo"
+
+
 # Tables names
-tb_locacion_descenso = "UBER_ANALISIS.dbo.CAT_LOCACION_DESCENSO"
-tb_locacion_recogida = "UBER_ANALISIS.dbo.CAT_LOCACION_RECOGIDA"
-tb_proveedor = "UBER_ANALISIS.dbo.CAT_PROVEEDOR"
-tb_tarifa = "UBER_ANALISIS.dbo.CAT_TARIFA"
-tb_tipo_pago = "UBER_ANALISIS.dbo.CAT_TIPO_PAGO"
-tb_fch = "UBER_ANALISIS.dbo.DIM_FCH"
-tb_pago_viaje = "UBER_ANALISIS.dbo.FACT_PAGO_VIAJE"
-tb_im_locacion_descenso = "UBER_ANALISIS.dbo.IM_CAT_LOCACION_DESCENSO"
-tb_im_locacion_recogida = "UBER_ANALISIS.dbo.IM_CAT_LOCACION_RECOGIDA"
-tb_im_proveedor = "UBER_ANALISIS.dbo.IM_CAT_PROVEEDOR"
-tb_im_tarifa = "UBER_ANALISIS.dbo.IM_CAT_TARIFA"
-tb_im_tipo_pago = "UBER_ANALISIS.dbo.IM_CAT_TIPO_PAGO"
-tb_im_fch = "UBER_ANALISIS.dbo.IM_DIM_FCH"
-tb_im_pago_viaje = "UBER_ANALISIS.dbo.IM_FACT_PAGO_VIAJE"
-tb_tmp_pago_viaje = "UBER_ANALISIS.dbo.TMP_FACT_PAGO_VIAJE"
-tb_log_carga = "UBER_ANALISIS.dbo.DIM_LOG_CARGA"
-
-
-# Final tables names
 tbf_locacion_descenso = "CAT_LOCACION_DESCENSO"
 tbf_locacion_recogida = "CAT_LOCACION_RECOGIDA"
 tbf_proveedor = "CAT_PROVEEDOR"
@@ -129,6 +115,33 @@ tbf_tipo_pago = "CAT_TIPO_PAGO"
 tbf_fch = "DIM_FCH"
 tbf_pago_viaje = "FACT_PAGO_VIAJE"
 tbf_log_carga = "DIM_LOG_CARGA"
+tbi_locacion_descenso = "IM_CAT_LOCACION_DESCENSO"
+tbi_locacion_recogida = "IM_CAT_LOCACION_RECOGIDA"
+tbi_proveedor = "IM_CAT_PROVEEDOR"
+tbi_tarifa = "IM_CAT_TARIFA"
+tbi_tipo_pago = "IM_CAT_TIPO_PAGO"
+tbi_fch = "IM_DIM_FCH"
+tbi_pago_viaje = "IM_FACT_PAGO_VIAJE"
+tbt_pago_viaje = "TMP_FACT_PAGO_VIAJE"
+
+
+# Complete tables names
+tb_locacion_descenso = database_name + "." + schema_db + "." + tbf_locacion_descenso
+tb_locacion_recogida = database_name + "." + schema_db + "." + tbf_locacion_recogida
+tb_proveedor = database_name + "." + schema_db + "." + tbf_proveedor
+tb_tarifa = database_name + "." + schema_db + "." + tbf_tarifa
+tb_tipo_pago = database_name + "." + schema_db + "." + tbf_tipo_pago
+tb_fch = database_name + "." + schema_db + "." + tbf_fch
+tb_pago_viaje = database_name + "." + schema_db + "." + tbf_pago_viaje
+tb_im_locacion_descenso = database_name + "." + schema_db + "." + tbi_locacion_descenso
+tb_im_locacion_recogida = database_name + "." + schema_db + "." + tbi_locacion_recogida
+tb_im_proveedor = database_name + "." + schema_db + "." + tbi_proveedor
+tb_im_tarifa = database_name + "." + schema_db + "." + tbi_tarifa
+tb_im_tipo_pago = database_name + "." + schema_db + "." + tbi_tipo_pago
+tb_im_fch = database_name + "." + schema_db + "." + tbi_fch
+tb_im_pago_viaje = database_name + "." + schema_db + "." + tbi_pago_viaje
+tb_tmp_pago_viaje = database_name + "." + schema_db + "." + tbt_pago_viaje
+tb_log_carga = database_name + "." + schema_db + "." + tbf_log_carga
 
 
 # Define tables schemas

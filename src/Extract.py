@@ -3,9 +3,10 @@
 # Process: ETL Project (Extract)                                                  #
 # Created by: Armando Avila                                                       #
 # Purpose: Gets the interface from a json file and transforms it into a flat file #
-# Comment: Run File_Extract.py file functions                                     #
+# Comment: Runs File_Extract.py file functions                                    #
 #          deleteFile()                                                           #
 #          createFile()                                                           #
+#          Gets parameters from ETL_Param.py file                                 #
 # Created: 2023-08                                                                #
 # Modified:                                                                       #
 #                                                                                 #
@@ -13,6 +14,7 @@
 
 
 # The libraries are imported
+from aux_src.ETL_Param import *
 from aux_src.File_Extract import *
 from pyspark.sql import SparkSession
 import logging
