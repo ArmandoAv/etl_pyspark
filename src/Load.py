@@ -11,10 +11,10 @@
 #          createBadFile()                                                        #
 #          Runs File_Load_Log file functions                                      #
 #          loadLogTable()                                                         #
-#          Runs File_Load_Clean file function                                     #
+#          Runs File_Clean_Path file function                                     #
 #          cleanPaths()                                                           #
 #          Gets parameters from ETL_Param.py file                                 #
-#          Gets defined queries from Table_Load_Read.py file                      #
+#          Gets defined queries from File_Load_Table_Read.py file                 #
 # Created: 2023-08                                                                #
 # Modified:                                                                       #
 #                                                                                 #
@@ -24,10 +24,10 @@
 # The libraries are imported
 from aux_src.ETL_Param import *
 from aux_src.File_Load import *
-from aux_src.File_Clean import *
+from aux_src.File_Clean_Path import *
 from aux_src.File_Load_Bad import *
 from aux_src.File_Load_Log import *
-from aux_src.Table_Load_Read import *
+from aux_src.File_Load_Table_Read import *
 from pyspark.sql import SparkSession
 import logging
 

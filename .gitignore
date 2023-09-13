@@ -1,6 +1,5 @@
 # Ignore enviroment variables .env file
-# Ignore __pycache__ and docs directories
+# Ignore __pycache__ directory
 
 .env
 src/aux_src/__pycache__
-docs/
