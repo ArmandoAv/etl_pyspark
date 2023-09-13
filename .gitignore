@@ -3,4 +3,4 @@
 
 .env
 src/aux_src/__pycache__
-../docs
+docs/
